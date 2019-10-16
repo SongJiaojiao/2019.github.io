@@ -1,0 +1,571 @@
+body{
+    padding-top:0px;
+    overflow-x: hidden;
+    font-family: "font-light";
+}
+
+.container-fluid{
+    padding-left:0px;
+    padding-right:0px;
+    
+}
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.navbar{
+    padding:20px 10% 20px 10%;   
+    z-index:99;
+}
+
+.menu-button{
+    margin-left:-30px;
+    z-index:100 !important;
+}
+
+
+.navbar-vertical{
+    text-align: center;
+    margin-top:150px;
+    display:block; 
+}
+
+
+
+#overlay {
+  position:absolute;
+  opacity:1;
+  z-index:90;
+  width: 100%; 
+  height: 100%;
+  background-color:white; /* Black background with opacity */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+
+.navbar-light .navbar-toggler{
+    border-color: rgba(0,0,0,0);
+    border-radius:0px !important;
+    right:20%;  
+}
+
+/*remove button outline and shadow*/
+button:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+/*button general styling*/
+.btn{
+    background-color:transparent;
+    border-radius:20px;
+    padding: 7px 25px 7px 25px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition:all 0.9s;
+    position:relative;
+}
+
+.btn:hover{
+    border-radius: 20px;
+}
+
+.btn::before,
+.btn::after {
+  border-radius: 20px;
+  background: #000;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+
+/*dark button hover*/
+.btn-outline-dark{
+    overflow: hidden;
+    border-color: #333333;   
+}
+
+.btn-outline-dark::after{
+    height:100%;
+    left:-35%;
+    top:0;
+    transform:skew(45deg);
+    transition-duration:0.5s;
+    transform-origin:top left;
+    width:0;   
+}
+
+.btn-outline-dark:hover:after{
+    height:100%;
+    width:135%;
+}
+
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #000;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+  transition: all 0.2s;
+}
+
+
+.tagline{
+    height:450px;
+    margin-left: 11%;
+    margin-right: 10%;
+}
+
+
+
+/*Thumbnail---------------*/
+
+.thumbnail{
+    padding:0;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.thumbnail img{
+    vertical-align:middle;
+    cursor: pointer;
+}
+
+
+.thumbnail-color{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    opacity:0;
+    opacity: 0;
+    transition: all 0.2s ease;
+    z-index:99;
+     cursor: pointer;
+
+}
+.thumbnail-title{
+    opacity:0;
+    top:20%;
+    left: 0;
+    right: 0;
+    position:absolute;
+    z-index:100;
+    font-family: "font-regular";
+    color: white;
+    font-size:28px;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+     cursor: pointer;
+}
+
+.thumbnail-description{
+    font-family: "font-regular";
+    opacity:0;
+    top:75%;
+    left: 60px;
+    right: 60px;
+    position:absolute;
+    z-index:100;
+    color: white;
+    font-size:15px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    line-height: 1.6;
+}
+
+.thumbnail-line{   
+    top:50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position:absolute;
+    transition: all 0.4s ease;
+    opacity:1;
+    width:0%;
+    height:2px;
+    border-bottom: 1px solid white;
+    z-index:100;
+}
+
+.thumbnail-img{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    opacity:0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform:scale(3);  
+    background-size:cover;
+}
+
+
+.thumbnail:hover{
+    cursor: pointer;
+}
+.thumbnail:hover .thumbnail-img {
+   opacity: 1;
+   transform:scale(1);  
+    cursor: pointer;
+}
+
+.thumbnail:hover .thumbnail-color {
+   opacity: 0.7;
+     cursor: pointer;
+
+}
+
+.thumbnail:hover .thumbnail-title {
+   opacity: 1;
+   top: 35%;
+     cursor: pointer;
+
+}
+
+
+.thumbnail:hover .thumbnail-line {
+   opacity: 1;
+   width:40%;
+    
+ 
+} 
+.thumbnail:hover .thumbnail-description {
+   opacity: 1;
+   top: 57%;
+ 
+}
+
+
+
+.banner-strangercalls{
+    background-image: url("/img/homepage/credit.png"); 
+}
+
+.banner-capstone{
+    background-image: url("/img/homepage/capstone.png"); 
+}
+
+.banner-lmd{
+    background-image: url("/img/homepage/lmd.png");
+}
+
+.banner-msra{
+    background-image: url("/img/homepage/msra.png"); 
+}
+
+.banner-goji{
+    background-image: url("/img/homepage/goji.png");
+}
+
+.banner-cocktail{
+    background-image: url("/img/homepage/cocktail.png"); 
+}
+
+
+
+.color-strangercalls{
+    background-color:#4C66FC;
+}
+
+.color-lmd{
+    background-color:#f29d16;
+}
+
+.color-capstone{
+    background-color: rgba(51, 48, 227, 0.8);
+}
+.color-msra{
+    background-color: #f65314;
+}
+
+.color-goji{
+    background-color: #094aa4;
+}
+
+.color-cocktail{
+    background-color: #4d108d;
+}
+
+
+.color-about{
+    margin-left: 0px;
+    background-color: black;
+}
+
+
+
+.card{
+    height:400px;
+    padding: 0px;
+    text-align: center;
+    background-color:white;
+    border-radius: 12px;
+    border:none;
+    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, .08);
+    margin: 0px 80px 80px 80px;
+}
+
+
+.card:hover {
+    
+    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, .15);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+/* Modal */
+.modal{
+    border-radius: 15px;
+   
+}
+
+.modal-content{
+    padding: 20px;
+    height: 280px;
+}
+
+.modal-header  {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+
+.close {
+  font-weight: 400;
+}
+
+
+.input-box{
+    width: 100%;
+    font-family: "font-light";
+    letter-spacing: 4px;
+    height: 30px;
+    border-left: none;
+    border-top:none;
+    border-right:none;
+    
+}
+
+.input-box:focus {
+    outline: none !important;
+    box-shadow: none;
+    border-bottom-color: black;
+    transition: all 0.2s ease;
+    
+}
+
+::placeholder{
+    color:#999999;
+    font-family: "font-light" !important;
+}
+
+#validation{
+    font-family: "font-light";
+    margin-top: 8px;
+    display: none;
+    color:crimson;
+}
+
+/*fun*/
+.illustration{
+    padding: 0;
+    margin: 0;
+}
+
+.clock{
+
+    text-align: center;
+}
+
+.banner-typography{
+    background-image: url("/img/fun/red.jpg"); 
+}
+
+.banner-groupicon{
+    background-image: url("/img/fun/grouplogo.png"); 
+}
+
+.banner-hacker{
+    background-image: url("/img/fun/hacker.jpg"); 
+}
+
+.banner-spring{
+    background-image: url("/img/fun/chunlian.jpg"); 
+}
+
+
+
+.add-next{
+    opacity:0;
+}
+
+
+/*footer*/
+.page-footer{
+    margin-top: 70px;
+    height:80px;
+    margin-bottom: 60px;
+}
+.social-icon{
+    text-align: center;
+    position: relative;
+    height:40px;
+
+}
+
+
+.fa{
+    color:black;
+    font-size:20px;
+    margin-left:20px;
+    transition: all 0.2s;
+}
+
+.fa:hover{
+    color:black;
+    transform: scale(1.3);
+    text-decoration: none;
+}
+
+
+/*about*/
+
+.section-box{
+    margin-bottom: 200px;
+}
+
+
+.about{
+    margin-top: 8%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align:top;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.profile{
+    
+    left:0;
+    right:0;
+    margin:auto;
+    margin-bottom: 90px;
+}
+
+
+.bio{
+     padding-top:-30px;
+    padding-left: 8%;
+}
+
+.skill{
+    padding-right: 5px;
+    margin-top: 60px;
+    padding-left: 0;
+}
+.skill img{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+.fun-fact{
+    padding-left:0;
+    padding-right:0;
+    
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+.fun-fact img{
+    width: 100%;
+    height:100%;
+    transition: all 0.3s ease;
+    
+}
+
+@media only screen and (min-width: 992px) {
+  #overlay {
+    display:none;
+    background-color:white;
+  }
+ 
+}
+@media only screen and (max-width: 992px) {
+ 
+.navbar{
+    padding:20px 30px 20px 40px;   
+}
+.social-icon{
+        text-align: center;
+    }  
+.copyright{
+        text-align: center;
+    }
+.p-footer{
+        text-align: center;
+        margin:auto;
+        float: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .tagline{
+        height: 300px;
+    }
+  .bio {
+    margin-top: 60px;
+    padding-left: 15px;
+  }
+    
+}
+
+
+@media only screen and (max-width: 576px) {
+    .tagline{
+        height: 200px;
+    }
+
+}
+
+#particlebg{
+    display:none;
+    }
+}
+
+

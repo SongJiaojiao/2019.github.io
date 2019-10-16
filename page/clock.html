@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>recommendation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand|Courgette|Lobster+Two|Abril+Fatface|Lobster|Shrikhand');
+
+
+body{
+    height:700px;
+    font-family: Quicksand;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background: #23144D;
+}
+
+
+#bg_svg{
+    position: absolute;
+    display: inline;
+    width:70%;
+    height:100%;
+    background-color: #312f53;
+    z-index: 1;
+}
+
+
+#container{
+    height:100%;   
+        }
+
+
+h1,.h1{
+    color: white;
+    font-family: Quicksand;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  
+}
+
+h2,.h2{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+
+
+
+/*********************
+tag text
+*/
+p{
+    color:white; 
+    font-size: 1.2em; 
+    letter-spacing: 1px;
+    font-weight: 300;
+    height: 12px;
+}
+
+
+#canvas{
+    z-index: -20;
+}
+
+
+.outline {
+  stroke: white;
+  stroke-width: 1;
+}
+
+.second {
+  stroke: white;
+  stroke-width: 2;
+}
+
+.hour {
+  stroke: white;
+  stroke-width: 0;
+}
+
+.second-hand {
+  stroke: white;
+  stroke-width: 3;
+}
+
+.minute-hand {
+  stroke: white;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.hour-hand {
+    
+  stroke: white;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+
+
+      </style>
+    
+      
+  </head>
+    
+  <body>
+<div class = "container" style = "padding-top: 0%; padding-left: 0%;padding-right: 0%">
+        <div class="clock" style="margin-bottom: 10%"></div></div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+<script>
+            //get current browser size
+var w = window.innerWidth;
+var h = window.innerHeight;
+//w = 0.7 * w;
+//h = 0.5*h;
+
+
+
+var emt
+var flv
+
+
+//append an svg in container as a canvas or sth     
+var svg = d3.select("#bg_svg").append("svg") 
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("z-index","300")
+            .attr("viewBox", "0 0 "+w+" "+h )
+
+
+
+//get the recommended cocktail name
+
+var svg1 = d3.select(".clock").append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "0 0 400 240")
+            .attr("z-index","300")
+       
+
+var amtPerSec = 3600;
+
+var margin = {
+	top: 40,
+    right: -30,
+    bottom: 50,
+    left: 70
+}
+
+var radians = 0.0174532925;
+
+//size of the clock
+var r = 80;
+
+var secR = r + 16;
+var hourR = r - 40;
+
+//length of hands
+var hourHandLength = r;
+var minuteHandLength = 0;
+var secondHandLength = 0;
+
+w=220
+h=300
+
+
+var drag = d3.behavior.drag()
+	.on('dragstart', dragstart)
+	.on('drag', drag)
+	.on('dragend', dragend);
+
+
+// define values for time
+var handData = [
+	{
+		type:'hour',
+		value:0,
+		length:-hourHandLength,
+		// scale:hourScale
+	},
+	{
+		type:'minute',
+		value:0,
+		length:-minuteHandLength,
+		// scale:minuteScale
+	},
+	{
+		type:'second',
+		value:0,
+		length:-secondHandLength,
+		// scale:secondScale
+	}
+];
+
+
+// Get current time 
+function updateData(){
+	var t = new Date();
+    handData[1].value = t.getMinutes();
+	handData[2].value = t.getSeconds();
+	handData[0].value = t.getHours() + t.getMinutes()/60 ;
+
+}
+ // Display current time
+updateData();
+var a  = new Date()
+console.log(a.getHours())
+console.log(a.getMinutes())
+
+
+var g = svg1.append('g')
+	.attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+var face = g.append('g')
+	.attr('transform', 'translate(' + r + ',' + r + ')');
+
+
+face.append("text")
+    .attr('x',0)
+    .attr('y',-1.1*r)
+    .text("12:00")
+    .attr('text-anchor', 'middle')
+    .style('font-size', "9px")
+    .attr('fill','white')
+face.append("text")
+    .attr('x',1.3*r)
+    .attr('y',5)
+    .text("18:00")
+    .attr('text-anchor', 'middle')
+    .style('font-size', "9px")
+    .attr('fill','white')
+face.append("text")
+    .attr('x',0)
+    .attr('y',1.2*r)
+    .text("00:00")
+    .attr('text-anchor', 'middle')
+    .style('font-size', "9px")
+    .attr('fill','white')
+face.append("text")
+    .attr('x',-1.3*r)
+    .attr('y',5)
+    .text("06:00")
+    .attr('text-anchor', 'middle')
+    .style('font-size', "9px")
+    .attr('fill','white');
+
+face.append("text")
+    .attr('x',1.8*r)
+    .attr('y',-15)
+    .text("Degree:")
+    .style('font-size', "11px")
+    .attr('text-anchor', 'left')
+    .attr('fill','white');
+face.append("text")
+    .attr('x',1.8*r)
+    .attr('y',10)
+    .text("X:")
+    .style('font-size', "11px")
+    .attr('text-anchor', 'left')
+    .attr('fill','white');
+face.append("text")
+    .attr('x',1.8*r)
+    .attr('y',35)
+    .text("Y:")
+    .style('font-size', "11px")
+    .attr('text-anchor', 'left')
+    .attr('fill','white');
+
+var morning = face.append("svg:image")
+            .attr('x',-r)
+            .attr('y',-r)
+            .attr('width', r)
+            .attr('height', r)
+            .attr('xlink:href', "https://image.ibb.co/gqCj1e/morning.png")
+            .style('opacity',0.4)
+var afternoon = face.append("svg:image")
+                .attr('x',0)
+                .attr('y',-r)
+                .attr('width', r)
+                .attr('height', r)
+                .attr('xlink:href', "https://image.ibb.co/jm7HMe/afternoon.png")
+                .style('opacity',0.4)
+var evening = face.append("svg:image")
+                .attr('x',0)
+                .attr('y',0)
+                .attr('width', r)
+                .attr('height', r)
+                .attr('xlink:href', "https://image.ibb.co/gx8P1e/evening.png")
+                .style('opacity',0.4)
+var crazytime = face.append("svg:image")
+                .attr('x',-r)
+                .attr('y',0)
+                .attr('width', r)
+                .attr('height', r)
+                .attr('xlink:href', "https://image.ibb.co/kJwYuz/crazytime.png")
+                .style('opacity',0.4)
+
+
+
+// initiate status
+var status
+var a = new Date()
+crt_h = a.getHours()
+crt_m = a.getMinutes()
+crt_h += crt_m/60
+
+
+// initial: assign to status and change opacity
+if (crt_h>=0 && crt_h<=6){
+    status = 'Crazytime'
+    crazytime.style('opacity',1.0)
+} 
+if  (crt_h>6 && crt_h<=12)
+{
+    status = 'Morning'
+    morning.style('opacity',1.0)
+
+   
+}
+
+if (crt_h>12 && crt_h<18){
+    status = 'Afternoon'
+    afternoon.style('opacity',1.0)
+ 
+}
+if (crt_h>=18 && crt_h <24){
+    status = 'Evening'
+    evening.style('opacity',1.0)
+   
+}
+console.log(status)
+// color of the clock, just styling
+face.append('circle')
+	.attr({
+		class: 'outline',
+		r: r,
+		cx: 0,
+		cy: 0,
+		fill: '#f7f7f7',
+        opacity: 0.0
+	});
+
+
+var hands = face.append('g');
+
+
+//define the lines of the three hands
+hands.selectAll('line')
+	.data(handData)
+    
+    .enter().append('line')
+	.attr({
+		class: function(d) { return d.type + '-hand'; },
+		x1: 0, //starting point
+		y1: 0, //ending point
+		x2: function(d) {
+
+			return -d.length * Math.cos(Math.PI*(d.value+6)/12);
+
+		},
+		y2: function(d) {
+
+			return -d.length * Math.sin(Math.PI * (d.value+6)/12);
+		}
+	})
+	.call(drag);
+
+
+// small circle in middle to cover hands, just styling
+face.append('circle')
+	.attr({
+		cx: 0,
+		cy: 0,
+		r: 10,
+		fill: 'white',
+		
+	});
+
+function dragstart() {
+}
+
+var rad
+
+
+function daysegs(x,y){
+    if (x>0 && x<100 && y>-100 && y <0)
+        {
+        return 'Afternoon';
+        }
+    if (x>0 && x<100 && y>0 && y <100)
+        {
+        return 'Evening';
+        }
+    if (x>-100 && x<0 && y>0 && y <100)
+        {
+        return 'Crazytime';
+        }
+    if (x>-100 && x<0 && y >-100 && y<0) {
+        return 'Morning';
+        }
+    if (x == 100 && y ==0){
+        return 'Evening';
+    }
+    if (x == 0 && y ==100){
+        return 'Crazytime';
+    }
+    if (x == 0 && y ==-100){
+        return 'Afternoon';
+    }
+    if (x == 100 && y ==0){
+        return 'Evening';
+    }
+    if (x == -100 && y ==0){
+        return 'Morning';
+    }
+}
+
+
+
+var crt_status
+
+
+
+function drag() {
+	
+	rad = Math.atan2(d3.event.y, d3.event.x);	
+	d3.select(this)
+		.attr({
+			x2: function(d) {
+				return r * Math.cos(rad);
+                console.log(r * Math.cos(rad))
+			},
+			y2: function(d) {
+				return r * Math.sin(rad);
+			}
+		}); 
+
+    var angle = d3.format(".1f")(-180/Math.PI*Math.atan2(d3.event.y, d3.event.x));
+    var zone
+    if (angle>=0 && angle<90){
+        zone = "Afternoon";
+    }
+    if (angle>=90 && angle<180){
+        zone = "Morning";
+    }
+    if (angle>=-90 && angle<0){
+        zone = "Evening";
+    }
+    if (angle>=-180 && angle<-90){
+        zone = "Crazytime";
+    }
+    
+    var drag_x = 110*Math.cos(angle*Math.PI/180);
+    var drag_y = -110*Math.sin(angle*Math.PI/180);
+ 
+    
+    crt_status = daysegs(r * Math.cos(rad),r * Math.sin(rad))
+
+    
+    if (d3.select('.crt_info')){
+        d3.select('.crt_info').remove();
+        d3.select('.crt_status').remove();
+        d3.select('.position_info').remove();
+        d3.select('.x_pos').remove();
+        d3.select('.y_pos').remove();
+        
+        face.append("text")
+        .attr('x',drag_x)
+        .attr('y',drag_y)
+        .attr('class',"crt_info")
+        .style('font-size', "9px")
+        .text(zone)
+        .attr('text-anchor', 'middle')
+        .attr('fill','white')
+        
+
+        
+        face.append("text")
+        .attr('x',2.4*r)
+        .attr('y',-15)
+        .attr('class',"position_info")
+        .text(angle)
+        .style('font-size', "9px")
+        .attr('text-anchor', 'left')
+        .attr('fill','white')
+        
+        face.append("text")
+        .attr('x',2*r)
+        .attr('y',10)
+        .attr('class',"x_pos")
+        .text(d3.format(".1f")(d3.event.x))
+        .style('font-size', "9px")
+        .attr('text-anchor', 'left')
+        .attr('fill','white')
+        face.append("text")
+        .attr('x',2*r)
+        .attr('y',35)
+        .attr('class',"y_pos")
+        .text(d3.format(".1f")(d3.event.y))
+        .style('font-size', "9px")
+        .attr('text-anchor', 'left')
+        .attr('fill','white')
+        
+        
+    }
+      
+    else{
+        
+        face.append("text")
+        .attr('x',drag_x)
+        .attr('y',drag_y)
+        .attr('class',"crt_info")
+        .text(zone)
+        .style('font-size', "9px")
+        .attr('text-anchor', 'middle')
+        .attr('fill','white')
+        
+ 
+        
+        face.append("text")
+        .attr('x',2.5*r)
+        .attr('y',-25)
+        .attr('class',"position_info")
+        .text(angle)
+        .style('font-size', "9px")
+        .attr('text-anchor', 'left')
+        .attr('fill','white')
+        face.append("text")
+        .attr('x',2*r)
+        .attr('y',0)
+        .attr('class',"x_pos")
+        .text(d3.format(".1f")(d3.event.x))
+        .style('font-size', "9px")
+        .attr('text-anchor', 'left')
+        .attr('fill','white')
+        face.append("text")
+        .attr('x',2*r)
+        .attr('y',25)
+        .attr('class',"y_pos")
+        .text(d3.format(".1f")(d3.event.y))
+        .style('font-size', "9px")
+        .attr('text-anchor', 'left')
+        .attr('fill','white')
+        
+        
+    }
+    if (crt_status!= status){
+       if (status == 'Morning'){
+           morning.style('opacity',0.4)
+       }
+       if (status == 'Afternoon'){
+           afternoon.style('opacity',0.4)
+       }
+       if (status == 'Evening'){
+           evening.style('opacity',0.4)
+       }
+       if (status == 'Crazytime'){
+           crazytime.style('opacity',0.4)
+       }
+       
+       if (crt_status == 'Morning'){
+           morning.style('opacity',1.0)
+       }
+       if (crt_status == 'Afternoon'){
+           afternoon.style('opacity',1.0)
+       }
+       if (crt_status == 'Evening'){
+           evening.style('opacity',1.0)
+       }
+       if (crt_status == 'Crazytime'){
+           crazytime.style('opacity',1.0)
+       }
+       
+    }
+    status = crt_status
+    
+    
+    
+}
+
+function dragend() {
+
+}
+
+
+
+    
+      </script>
+  </body>
+ 
+  
+</html>

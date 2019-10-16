@@ -1,0 +1,289 @@
+
+
+@font-face {
+    font-family: 'font-bold';
+    src: url('font/f37ginger-bold-webfont.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-medium';
+    src: url('font/f37ginger-regular-webfont.ttf')format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-regular';
+    src: url('font/f37ginger-light-webfont.ttf')format('truetype');
+
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'nameline';
+    src: url('font/GoogleSans-Bold.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family:'quote';
+    src:url('https://fonts.googleapis.com/css?family=Prata&display=swap');
+    
+}
+
+
+.navbar{
+    font-family: "font-regular";
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #999999;
+}
+
+.navbar-light .navbar-nav .nav-link:active{
+    color: black;
+}
+
+
+.navbar-vertical{
+    font-family: "font-regular";
+    font-size: 15px;
+    letter-spacing: 3px;  
+    line-height: 5;
+}
+
+.navbar-vertical li{
+    display:none;
+}
+
+
+.navbar-vertical li a{
+    color: #999999;
+    display:block;
+}
+
+.navbar-vertical li a:hover, .navbar-vertical li.active a {
+    	color: #000 !important;
+    	background-color: transparent!important; 
+    }
+
+
+.nav-item{
+    padding-left:60px;
+}
+
+.btn{
+    font-family: "font-regular";
+}
+
+
+
+/**Page Title**/
+h1{
+    font-family: "font-medium" !important;
+    font-size:30px;
+    line-height: 1.5; 
+   
+}
+
+/**Section Title**/
+h2{
+    font-family: "font-medium";
+    font-size:26px;
+    line-height: 1.5 ;
+    letter-spacing: 1px ;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/**Sub Section Title**/
+h3{
+    vertical-align: middle;
+    font-family: "font-medium";
+    font-size:20px;
+    line-height: 1.5 ;
+    letter-spacing: 1px ;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 15px
+}
+
+/**Description Title**/
+h4{
+    font-family: "font-regular" !important;
+    font-size:14px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+
+.caption{
+    font-family: "font-medium" !important;
+    font-size:13px;
+    color: #555555;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 3%;
+/*    padding-bottom: 3%;*/
+    
+}
+
+.quotefont{
+    font-family: 'font-medium'  !important;
+    padding: 0px;
+    font-size:24px;   
+    color:#C74444;
+    line-height: 1.5;
+}
+
+
+.left{
+    text-align:left!important;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+    
+.white{
+    color:white;
+}
+
+p-description{
+    font-family: "font-regular";
+    font-size:14px;
+    line-height: 1.5 ;
+
+}
+
+p{
+    font-family: "font-regular" !important;
+    font-size:16xpx;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    color: #555555;
+    
+}
+
+.guide{
+    font-family: "font-bold" !important;
+    font-size:15px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    color: #bbbbbb;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    
+    
+}
+
+
+
+.list-group{ 
+    list-style-type: none;
+    margin-top: 20px;
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.list-group-item{
+    font-family: "font-medium";
+    font-size: 16px;
+    line-height: 1.5;
+    color:#555555;
+    border:none;
+    padding: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+.p-footer{
+    color:#555555;
+    font-family: "font-regular";
+    font-size:15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+.purple{
+    color: #695FED;
+}
+
+.red{
+    color:#E3606C;
+}
+.grey {
+    margin-top: 140px;
+    margin-bottom: 30px;
+    color:#cccccc;
+}
+
+
+.link{
+    font-weight: 900;
+    color:#432EEE;
+}
+.link:hover{
+    color:#432EEE;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+   .p-footer{
+        text-align: center;
+    }
+    .caption{
+        margin-bottom: 0px;
+    }
+    
+    
+}
+
+/*-TABLETS-*/
+@media only screen and (max-width: 768px) {
+}
+   
+/*MOBILE*/
+@media only screen and (max-width: 567px) {
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .nameline{
+    margin-top:40px !important;
+    }
+   
+    .sloganline {
+    margin-top:25px !important;
+    font-size: 18px;
+
+    }
+    
+    h3{
+    font-size:16px;
+    line-height: 1.5;
+}
+    .white_des{
+    font-size:13px;
+    
+}
+}
+
+
+
