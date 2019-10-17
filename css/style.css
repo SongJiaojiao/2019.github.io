@@ -393,6 +393,11 @@ nav.stroke ul li a:hover:after {
     color:crimson;
 }
 
+.strip{
+    padding-left:25%;
+    padding-right:25%;
+}
+
 /*fun*/
 .illustration{
     padding: 0;
