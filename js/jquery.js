@@ -14,6 +14,7 @@
 })(jQuery);
 
 
+
  
 $(document).ready(function(){
 
@@ -41,7 +42,7 @@ $(document).ready(function(){
 
     $(".checkPasscode").click(function(){
         var userinput = $("#project1Passcode").val();
-        var pagelink = "../page/capstone.html";      
+        var pagelink = "../page/index.html";      
         checkPasscode(userinput,pagelink);
         
     });
@@ -92,17 +93,19 @@ $(document).ready(function(){
     
 });
 
+//check passcode
 function checkPasscode(userinput,pagelink){
     if (userinput == "jiaojiaodetoile"){
         $('.modal').modal('hide');
-        window.open(pagelink, '_blank');
+        window.location="index.html";
            
         }
     else {
         $("#validation").css("display", "block");        
-        }
-    
+        } 
 }
+
+
 //move overlay
 function checkSize(){
     //if screen > 992
