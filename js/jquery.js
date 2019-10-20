@@ -95,9 +95,9 @@ $(document).ready(function(){
 
 //check passcode
 function checkPasscode(userinput,pagelink){
-    if (userinput == "jiaojiaodetoile"){
+    if (userinput == "1625"){
         $('.modal').modal('hide');
-        window.location="index.html";
+        window.open('../page/credit.html');
            
         }
     else {
