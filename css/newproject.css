@@ -287,12 +287,31 @@ nav.stroke ul li a:hover:after {
     padding-right: 25%;
 }
 
+.strip-twocolumn{
+    padding-top:6%;
+    padding-bottom: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
 .artifact{
     background-color: #f7f7f7;
     padding:3% 3%;
     
     text-align: center;
     margin-bottom: 6%;
+}
+
+.artifact-fullscreen{
+    padding: 0;
+    margin-bottom: 6%;
+    
+}
+
+.artifact-narrow{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    
 }
 
 .highlight{
@@ -303,7 +322,7 @@ nav.stroke ul li a:hover:after {
      margin-top: 6%;
     
 }
-.purple-bg{
+.purple{
     background-color:#695FED;
 }
 
@@ -331,7 +350,6 @@ nav.stroke ul li a:hover:after {
 .quote{
     padding: 20px;
     margin-bottom:20px;
-    background-color: #F5E3E1;
     border-radius: 5px;
 }
 
@@ -364,17 +382,8 @@ nav.stroke ul li a:hover:after {
     padding: 0;
 }
 
-.imgpadding{
-    margin-top: 60px;
-}
 
-.sectionpadding{
-    margin-bottom: 100px;
-}
 
-.bottom60{
-     margin-bottom: 60px;
-}
 .problem-img{
     margin-top: auto;
     margin-bottom: auto;

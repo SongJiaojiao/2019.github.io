@@ -2,20 +2,20 @@
 
 @font-face {
     font-family: 'font-bold';
-    src: url('font/f37ginger-bold-webfont.ttf')format('truetype');
+    src: url('font/Cera-Bold.ttf')format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'font-medium';
-    src: url('font/f37ginger-regular-webfont.ttf')format('truetype');
+    src: url('font/Cera-Medium.ttf')format('truetype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'font-regular';
-    src: url('font/f37ginger-light-webfont.ttf')format('truetype');
+    src: url('font/Cera-Regular.ttf')format('truetype');
 
     font-style: normal;
 }
@@ -38,7 +38,7 @@
 
 .navbar{
     font-family: "font-regular";
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 3px;
 }
 
@@ -74,9 +74,6 @@
     }
 
 
-.nav-item{
-    padding-left:60px;
-}
 
 .btn{
     font-family: "font-regular";
@@ -96,7 +93,7 @@ h1{
 h2{
     font-family: "font-medium";
     font-size:26px;
-    line-height: 1.5 ;
+    line-height: 1.6 ;
     letter-spacing: 1px ;
     color: #333333;
     margin-bottom: 25px;
@@ -110,7 +107,7 @@ h3{
     line-height: 1.5 ;
     letter-spacing: 1px ;
     color: #333333;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 15px
 }
 
@@ -119,19 +116,18 @@ h4{
     font-family: "font-regular" !important;
     font-size:14px;
     line-height: 1.5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 5px;
 }
 
 
 .caption{
     font-family: "font-medium" !important;
-    font-size:13px;
-    color: #555555;
+    font-size:15px;
+    color: #999999;
     letter-spacing: 1px;
     text-align: center;
     padding-top: 3%;
-/*    padding-bottom: 3%;*/
     
 }
 
@@ -141,6 +137,7 @@ h4{
     font-size:24px;   
     color:#C74444;
     line-height: 1.5;
+    
 }
 
 
@@ -165,9 +162,9 @@ p-description{
 
 p{
     font-family: "font-regular" !important;
-    font-size:16xpx;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
+    font-size:17px;
+    line-height: 1.9;
+    letter-spacing: 0.4px;
     color: #555555;
     
 }
@@ -179,7 +176,7 @@ p{
     letter-spacing: 2px;
     color: #bbbbbb;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     
     
 }

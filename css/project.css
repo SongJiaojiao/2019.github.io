@@ -298,12 +298,12 @@ nav.stroke ul li a:hover:after {
     padding-right: 6%;
 }
 
-.paragragh{
+.strip{
     padding-left: 20%;
     padding-right: 20%;
 }
 
-.purple-bg{
+.purple{
     background-color:#695FED;
 }
 
@@ -331,7 +331,8 @@ nav.stroke ul li a:hover:after {
     margin-top: 20px;
     text-align: left;
     padding: 20px 20px;
-    margin-bottom: 30px;  
+    margin-bottom: 30px; 
+    text-align: left;
 }
 
 
@@ -459,7 +460,7 @@ padding-right:15%;}
     .strip{
         padding: 8% 5%;
     }
-    .paragragh{
+    .strip{
          padding: 8% 5%;
     }
     .imgpadding{
