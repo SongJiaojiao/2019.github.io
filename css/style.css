@@ -1,7 +1,7 @@
 body{
     padding-top:0px;
     overflow-x: hidden;
-    font-family: "font-light";
+    font-family: "font-regular";
 }
 
 .container-fluid{
@@ -131,14 +131,23 @@ nav.stroke ul li a:hover:after {
 
 
 .tagline{
-    height:35vh;
+    height:40vh;
     margin-left: 11%;
     margin-right: 10%;
 }
 
 
-
-/*Thumbnail---------------*/
+.card-project{
+    padding: 0;
+    border-radius: 12px;
+    margin-bottom: 35px;   
+}
+.card-project-left{
+    padding-left: 0;
+}
+.card-project-right{
+    padding-right: 0;
+}
 
 .thumbnail{
     padding:0;
@@ -149,14 +158,29 @@ nav.stroke ul li a:hover:after {
 }
 
 
-.thumbnail img{
+.thumbnail img{  
     vertical-align:middle;
     cursor: pointer;
+    z-index:99;
 }
 
 
+.thumbnail-img{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    opacity:0;
+    transition: all 0.4s ease;
+    transform:scale(1.7);  
+    background-size:cover;
+   
+}
+
 .thumbnail-color{
     position: absolute;
+    border-radius: 12px;
     top:0;
     left:0;
     bottom: 0;
@@ -165,7 +189,8 @@ nav.stroke ul li a:hover:after {
     opacity: 0;
     transition: all 0.2s ease;
     z-index:99;
-     cursor: pointer;
+     
+    cursor: pointer;
 
 }
 .thumbnail-title{
@@ -175,16 +200,12 @@ nav.stroke ul li a:hover:after {
     right: 0;
     position:absolute;
     z-index:100;
-    font-family: "font-regular";
-    color: white;
-    font-size:28px;
-    letter-spacing: 2px;
     transition: all 0.4s ease;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .thumbnail-description{
-    font-family: "font-regular";
+    font-family: "font-light";
     opacity:0;
     top:75%;
     left: 60px;
@@ -192,8 +213,6 @@ nav.stroke ul li a:hover:after {
     position:absolute;
     z-index:100;
     color: white;
-    font-size:15px;
-    letter-spacing: 0.5px;
     transition: all 0.4s ease;
     line-height: 1.6;
 }
@@ -212,32 +231,50 @@ nav.stroke ul li a:hover:after {
     z-index:100;
 }
 
-.thumbnail-img{
-    position: absolute;
-    top:0;
-    left:0;
-    bottom: 0;
-    right:0;
-    opacity:0;
-    opacity: 0;
-    transition: all 0.5s ease;
-    transform:scale(3);  
-    background-size:cover;
-}
-
 
 .thumbnail:hover{
     cursor: pointer;
 }
-.thumbnail:hover .thumbnail-img {
+
+
+.card-title{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.card-title:hover{
+    cursor:pointer;
+}
+
+.dropshadow{
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .08);
+}
+
+.card-project:hover .thumbnail-img {
    opacity: 1;
    transform:scale(1);  
-    cursor: pointer;
+   cursor:pointer;
+
 }
+
+.card-project:hover .title-content {
+   margin-left: -20px;
+   padding-right:20px;
+   cursor:pointer;
+   transition: all 0.4s ease;
+
+}
+
+
+.title-content{
+    transition: all 0.4s ease;
+}
+/*Thumbnail---------------*/
 
 .thumbnail:hover .thumbnail-color {
    opacity: 0.7;
-     cursor: pointer;
+   cursor: pointer;
 
 }
 
@@ -262,39 +299,34 @@ nav.stroke ul li a:hover:after {
 }
 
 
+.banner-cocktail{
+    background-image: url('../img/homepage/cocktail.png')
+}
+.banner-credit{
+    background-image: url('../img/homepage/credit.png');
+   
+}
+.banner-google{
+    background-image: url('../img/homepage/google.png')
+}
 
-.banner-strangercalls{
-    background-image: url("/img/homepage/credit.png"); 
+.banner-microsoft{
+    background-image: url('../img/homepage/MS.png')
 }
 
 .banner-capstone{
-    background-image: url("/img/homepage/capstone.png"); 
+    background-image: url('../img/homepage/capstone.gif')
 }
 
 .banner-lmd{
-    background-image: url("/img/homepage/lmd.png");
+    background-image: url('../img/homepage/lmd.png')
 }
-
-.banner-msra{
-    background-image: url("/img/homepage/msra.png"); 
-}
-
-.banner-goji{
-    background-image: url("/img/homepage/homerepair.png");
-}
-
-.banner-cocktail{
-    background-image: url("/img/homepage/cocktail.png"); 
-}
-
-
-
 .color-strangercalls{
     background-color:#4C66FC;
 }
 
 .color-lmd{
-    background-color:#f29d16;
+    background-color:#F5F1EB;
 }
 
 .color-capstone{
@@ -309,7 +341,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .color-cocktail{
-    background-color: #4d108d;
+    background-color: #4E3681;
 }
 
 
@@ -319,24 +351,14 @@ nav.stroke ul li a:hover:after {
 }
 
 
-
-.card{
-    height:400px;
-    padding: 0px;
+/*PILLAR*/
+.pillar{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top:15px;
+    width:40px;
+    height: 30px;
+    border-radius: 20px;
     text-align: center;
-    background-color:white;
-    border-radius: 12px;
-    border:none;
-    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, .08);
-    margin: 0px 80px 80px 80px;
-}
-
-
-.card:hover {
-    
-    box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, .15);
-    cursor: pointer;
-    transition: all 0.4s ease;
 }
 
 
@@ -411,54 +433,10 @@ nav.stroke ul li a:hover:after {
     text-align: center;
 }
 
-.banner-typography{
-    background-image: url("/img/fun/red.jpg"); 
-}
-
-.banner-groupicon{
-    background-image: url("/img/fun/grouplogo.png"); 
-}
-
-.banner-hacker{
-    background-image: url("/img/fun/hacker.jpg"); 
-}
-
-.banner-spring{
-    background-image: url("/img/fun/chunlian.jpg"); 
-}
-
 
 
 .add-next{
     opacity:0;
-}
-
-
-/*footer*/
-.page-footer{
-    margin-top: 70px;
-    height:80px;
-    margin-bottom: 60px;
-}
-.social-icon{
-    text-align: center;
-    position: relative;
-    height:40px;
-
-}
-
-
-.fa{
-    color:black;
-    font-size:20px;
-    margin-left:20px;
-    transition: all 0.2s;
-}
-
-.fa:hover{
-    color:black;
-    transform: scale(1.3);
-    text-decoration: none;
 }
 
 
@@ -552,25 +530,41 @@ img{
 
 
 @media only screen and (max-width: 768px) {
+    .card-project-left{
+        padding: 0;
+    }
+    .card-project-right{
+        padding: 0;
+    }
+
     .tagline{
         height: 300px;
     }
-  .bio {
-    margin-top: 60px;
-    padding-left: 15px;
-  }
+    .bio {
+        margin-top: 60px;
+        padding-left: 15px;
+    }
+    .card-title{
+        display: none;
+    }
     
 }
 
 
 @media only screen and (max-width: 576px) {
+    
+
+    .thumbnail-img{
+        padding: 10%;
+    }
     .tagline{
         height: 200px;
     }
+    .card-title{
+        display: none;
+    }
 
-}
-
-#particlebg{
+    #particlebg{
     display:none;
     }
 }

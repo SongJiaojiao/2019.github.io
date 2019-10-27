@@ -14,11 +14,6 @@ body{
     margin-right:0px;
 }
 
-.page-footer{
-    margin-top: 70px;
-    height:80px;
-    margin-bottom: 30px;
-}
 
 .navbar{
     padding:20px 60px 20px 60px;   
@@ -210,18 +205,6 @@ nav.stroke ul li a:hover:after {
 }
 
 
-.fa{
-    color:black;
-    font-size:20px;
-    margin-left:20px;
-    transition: all 0.2s;
-}
-
-.fa:hover{
-    color:black;
-    transform: scale(1.3);
-    text-decoration: none;
-}
 
 
 

@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'font-medium';
-    src: url('font/Cera-Medium.ttf')format('truetype');
+    src: url('font/eina-03-semibold.ttf')format('truetype');
     font-style: normal;
 }
 
@@ -152,6 +152,9 @@ h4{
 .white{
     color:white;
 }
+.black{
+    color: black !important;
+}
 
 p-description{
     font-family: "font-regular";
@@ -228,7 +231,8 @@ p{
 
 
 .link{
-    font-weight: 900;
+    
+    font-weight: 800;
     color:#432EEE;
 }
 .link:hover{
@@ -237,6 +241,51 @@ p{
 }
 
 
+.client-link{
+    font-size: 14px;
+    margin-top:15px;
+    color:#666666;
+    font-family: "font-regular";
+    letter-spacing: 1px; 
+}
+
+.client-link:hover{
+    color:#432EEE;
+}
+
+
+/*footer*/
+.page-footer{
+    margin-top: 70px;
+    height:80px;
+    margin-bottom: 60px;
+}
+
+.social-icon{
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    height:40px;
+
+}
+
+
+
+.fa{
+    color:black;
+    font-size:20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right:20px;
+    transition: all 0.2s;
+}
+
+
+.fa:hover{
+    color:black;
+    transform: scale(1.3);
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 992px) {
    .p-footer{

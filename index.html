@@ -24,7 +24,6 @@
     <link href="./css/hamburgers.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/font.css" rel="stylesheet">
-    <link href="./css/particle.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/aos.css">
     <script src="../js/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -103,54 +102,27 @@
 
 <div class = "tagline">
 
-        <div class="row" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" data-aos-delay="200" style = "padding-top: 6%;">
+        <div class="row" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" data-aos-delay="200" style = "padding-top: 7%;">
 
-            <h2>Hi, I am Jiaojiao</h2>
+            <h1>Hi, I am Jiaojiao</h1>
 
         </div>
     
         <div class="row" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" data-aos-delay="400">
-            <p style = "margin-top: 1%">A Product Designer based in San Francisco</p>
+            <p >A Product Designer based in San Francisco</p>
+        </div>
+        <div class="row social-icon"  style="text-align: left;" data-aos="fade-up" data-aos-duration="800" data-aos-offset="0" data-aos-delay="400">
+                <a href="#" class="fa fa-envelope"></a>
+                <a href="https://dribbble.com/-SONG"  target="_blank" class="fa fa-dribbble"></a>
+                <a href="https://www.linkedin.com/in/jiaojiao-song-136006113/" target="_blank" class="fa fa-linkedin"></a>
         </div>
 
 </div>
-<!--
-    
-<nav class="navbar navbar-expand-lg navbar-light stroke">   
-    
-    -------- Nav Toggler -------- 
-    <button class="hamburger hamburger--spring navbar-toggler menu-button" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    
-           
-    <div class="navbar-collapse collapse nav-right" id="navbarNav-">        
-        <ul class="nav navbar-nav ml-auto">
-         <li class="nav-item active">
-            <a class="nav-link" href="../index.html">UX
-            <span class="sr-only">(current)</span>
-            </a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="./page/fun.html">GRAPHICS+MOTION</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="./page/about.html">ABOUT</a>
-         </li>
-         <li class="nav-item">
-            <button type="button" class="btn btn-outline-dark" style="margin-top:-3px;" onclick="window.open('Resume_JiaojiaoSong.pdf','_blank')">RESUME</button>
-         </li>
-        </ul>
-    </div>
-</nav>
--->
 <!------------ INTRO END ------------>
 
 <!-------------- BANNER -------------->  
 <div class="container-fluid add-next">
-    <div class="row banner">    
+    <div class="row">    
            
     <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-dialog-centered">
@@ -178,32 +150,140 @@
             
         </div>
     </div>
-<!--
+    <div class = "col-12" style = "padding:5%">
+           
+            <div class = "col-12 row card-project" style = "background-color:#E4EBFD ">
+               <div class="col-md-7  col-xs-12 thumbnail" >
+                    <!--bglayer-->
+                   <img  src="/img/homepage/credit.png">       
+                    <!--overlaylayer-->
+                   <div class = "thumbnail-img banner-credit"></div>                  
+               </div>
+                
+               <div class = "col-md-5 card-title">
+                   <div class = "title-content">
+<!--                       <i class="fa fa-lock" style="display: inline-block; margin-bottom: 0; font-size:20px;"></i>-->
+                       <h2><i class="fa fa-lock" style = "margin-top: 0; margin-bottom: 0;font-size: 25px;color: #333333;"></i>Credit Service</h2>
+                       <p>An integrated credit solution for mortgage lenders</p>
+                       <div class = "client-link" onclick="window.open('https://www.roostify.com/')" >@ROOSTIFY </div>
+                
+                   </div>
+                </div>
 
-            <div class = "col-md-12">
-                <div class ="card">
-                    <div class = "row">
-                        <div class = "col-7">
-                            <img src = "img/capstone/Group%206.png">
-                        </div>
-                        <div class = "col-5">
-                            <h1>Lighthouse</h1>
-                        </div>
+            </div>
+
+        
+        
+            <div class = "col-12 row card-project" style = "background-color:#E9F4FE " onclick="window.open('../page/capstone.html','_blank')" >
+               <div class="col-md-7  col-xs-12 thumbnail" >
+                    <!--bglayer-->
+                   <img class = "dropshadow" src="/img/homepage/capstone.gif">          
+                    <!--overlaylayer-->
+                   <div class="thumbnail-img banner-capstone" ></div>                  
+               </div>
+                
+               <div class = "col-md-5 card-title">
+                   <div class = "title-content">              
+                            <h2>Lighthouse</h2>
+                            <p>An interactive data dashboard for K12 teachers</p>
+                            <div class="client-link" onclick="window.open('https://www.edmentum.com/')" >@EDMENTUM </div>
                     </div>
-                    
+                </div>
+
+            </div>
+            
+           <div class = "col-12 row card-project" style = "background-color:#f5f5f5 " onclick="window.open('../page/msra.html','_blank')">
+               <div class="col-md-7  col-xs-12 thumbnail" >
+                    <!--bglayer-->
+                   <img src="/img/homepage/MS.png">          
+                    <!--overlaylayer-->
+                   <div class="thumbnail-img banner-microsoft" ></div>                  
+               </div>
+   
+               <div class = "col-md-5 card-title">
+                   <div class = "title-content">              
+                            <h2>Powerstory</h2>
+                            <p>A data visualization authoring tool in PowerBI</p>
+                            <div class="client-link" onclick="window.open('https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/')" >@MICROSOFT </div>
+                    </div>
+                </div>
+
+            </div>
+        <div class = "col-12 row card-project" style = "background-color:#E7E6F7 " onclick="window.open('../page/homerepair.html','_blank')">
+               <div class="col-md-7  col-xs-12 thumbnail" >
+                    <!--bglayer-->
+                   <img src="/img/homepage/google.png">          
+                    <!--overlaylayer-->
+                   <div class="thumbnail-img banner-google" ></div>                  
+               </div>
+   
+               <div class = "col-md-5 card-title">
+                   <div class = "title-content">              
+                            <h2>Community Issue Reporting</h2>
+                            <p>An Issue Reporting System for a Residential Community</p>
+                    </div>
+                </div>
+
+            </div>
+        <div class = "row">
+            <div class = "col-md-6 col-sm-12 card-project-left">
+                <div class = "col-12 row card-project" style = "background-color:#F5F1EB;" onclick="window.open('../page/lmd.html','_blank')">
+                   <div class="col-md-12  col-xs-12 thumbnail" >
+
+                       <img src="/img/homepage/lmd.png">          
+
+                       <div class="thumbnail-img banner-lmd" ></div> 
+                       <div class="thumbnail-color color-lmd" ></div>
+                       <div class = "thumbnail-title"><h2>Lodestar</h2></div>
+                       <div class = "thumbnail-description"><p>Portfolio Documentation System for teenagers</p></div>
+                       <div class = "thumbnail-line" style="border-bottom: 1px solid black;"></div>
+                       <div class="thumbnail-img banner-lmd" ></div>  
+                   </div>
+
                 </div>
             </div>
--->
+            <div class = "col-md-6 col-sm-12 card-project-right">
+            
+            <div class = "col-12 row card-project" style = "background-color:#4E3681 " onclick="window.open('https://songjiaojiao1229.wixsite.com/songjiaojiao/cocktail-party','_blank')">
+                   <div class="col-md-12  col-xs-12 thumbnail" >
+
+                       <img src="/img/homepage/cocktail.png">          
+
+                       <div class="thumbnail-img banner-cocktail" ></div> 
+                       <div class="thumbnail-color color-cocktail" ></div>
+                       <div class = "thumbnail-title"><h2 class = "white">Cocktail Party</h2></div>
+                       <div class = "thumbnail-description"><p class = "white">A Data Visualization for First Time Drinkers in D3.js</p></div>
+                       <div class = "thumbnail-line"></div>
+                       <div class="thumbnail-img banner-cocktail" ></div>  
+                   </div>
+
+                </div>
+            </div>
+            
+  
+        </div>
 
 
+       
+
+    </div>
+
+</div>
+        
+
+
+
+<!--
         <div class="col-md-6  col-xs-12 thumbnail" >
+            
            <img src="/img/homepage/credit.png">          
            <div class="thumbnail-color color-strangercalls" ></div>
            <div class = "thumbnail-title">Roostify Credit Service</div>
            <div class = "thumbnail-description">An integrated credit solution for mortgage lenders </div>
            <div class = "thumbnail-line"></div>
+       
            <div class="thumbnail-img banner-strangercalls" ></div>                  
-       </div>
+       </div> 
         
         <div class="col-md-6  col-xs-12 thumbnail" onclick="window.open('../page/capstone.html','_blank')" >
            <img src="/img/homepage/capstone.png">          
@@ -250,9 +330,9 @@
            <div class = "thumbnail-line"></div>
            <div class="thumbnail-img banner-cocktail" ></div>                  
        </div>
+-->
 
-    </div> 
-</div>
+
 <!------------ BANNER END ------------>
 
 <footer class="row page-footer add-next">
