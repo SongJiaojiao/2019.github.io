@@ -265,8 +265,16 @@ nav.stroke ul li a:hover:after {
 .strip{
     padding-top:6%;
     padding-bottom: 6%;
+
+
+}
+
+
+.paragraph{
     padding-left: 25%;
     padding-right: 25%;
+    margin-bottom: 5%;
+    
 }
 
 .strip-twocolumn{
@@ -276,32 +284,47 @@ nav.stroke ul li a:hover:after {
     padding-right: 6%;
 }
 
+/*narrow and medium are not given padding because they always come with paragraph */
+
+.artifact-narrow{
+    padding-left: 25%;
+    padding-right: 25%;
+ 
+}
+.artifact-medium{
+    text-align: center;
+    padding-left:15%;
+    padding-right: 15%;
+}
+/*fullscreen images are given paddings to adjust>*/
+
+.artifact-fullscreen{
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  
+    
+}
+
 .artifact{
     background-color: #f7f7f7;
-    padding:3% 3%;
-    
+    padding:3% 3%;   
     text-align: center;
     margin-bottom: 6%;
 }
 
-.artifact-fullscreen{
-    padding: 0;
-    margin-bottom: 6%;
-    
-}
 
-.artifact-narrow{
-    margin-top: 35px;
-    margin-bottom: 35px;
-    
-}
+
+
 
 .highlight{
-     background-color: #f7f7f7;
+     background-color: #E4EBFD;
      padding:4% 4%;
      height:550px;
      text-align: center;
-     margin-top: 6%;
+     
     
 }
 .purple{
@@ -472,6 +495,10 @@ padding-right:15%;}
 
 /*-TABLETS-*/
 @media only screen and (max-width: 768px) {
+    .hidecontent{
+        display: none;
+    
+}
     .description{
     flex-direction: column-reverse;
     }
