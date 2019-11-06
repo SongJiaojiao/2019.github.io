@@ -83,7 +83,12 @@ body{
     background-color: #f7f7f7;
 }
 
-
+.credit{
+    background-image: url('../img/credit/splash.png');
+    background-position: center;
+    background-size:cover;
+    
+}
 
 /*remove button outline and shadow*/
 button:focus {
@@ -212,9 +217,9 @@ nav.stroke ul li a:hover:after {
 }
 
 .splash{
-    height:400px;
+    height:70vh;
     background-size:cover;
-    background-attachment: fixed;
+/*    background-attachment: fixed;*/
     
 }
 
@@ -320,8 +325,11 @@ nav.stroke ul li a:hover:after {
 
 
 .highlight{
-     background-color: #E4EBFD;
-     padding:4% 4%;
+/*     background-color: #EDF1FC;*/
+/*
+     padding-top:2%;
+     padding-bottom: 2%;
+*/
      height:550px;
      text-align: center;
      

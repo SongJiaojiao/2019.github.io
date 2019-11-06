@@ -365,17 +365,20 @@ nav.stroke ul li a:hover:after {
 
 /* Modal */
 .modal{
+    
     border-radius: 15px;
    
 }
 
 .modal-content{
     padding: 20px;
-    height: 350px;
+    height: 400px;
+     
 }
 
 .modal-header  {
     border-bottom: 0 none;
+   
 }
 
 .modal-footer {
@@ -388,6 +391,7 @@ nav.stroke ul li a:hover:after {
 
 
 .input-box{
+    margin-top: 30px;
     width: 100%;
     font-family: "font-light";
     letter-spacing: 4px;
