@@ -17,6 +17,7 @@
 
 
 $(document).ready(function(){
+    
 
   $(".add-next").delay(800).animate({
        opacity: 1

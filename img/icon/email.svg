@@ -1,17 +1,9 @@
-<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<rect x="0.661011" y="0.5" width="48" height="48" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17.661 31.2856L17.661 21.2856H31.661V31.2856H17.661ZM15.661 21.2856C15.661 20.1811 16.5564 19.2856 17.661 19.2856H31.661C32.7656 19.2856 33.661 20.1811 33.661 21.2856V31.2856C33.661 32.3902 32.7656 33.2856 31.661 33.2856H17.661C16.5564 33.2856 15.661 32.3902 15.661 31.2856V21.2856Z" fill="#5A6D7B"/>
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="17" y="21" width="15" height="11">
-<rect x="18.161" y="21.7856" width="13" height="9.14282" fill="#C4C4C4" stroke="#5A6D7B"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 17L5 7H19V17H5ZM3 7C3 5.89543 3.89543 5 5 5H19C20.1046 5 21 5.89543 21 7V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V7Z" fill="#5A6D7B"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="7" width="14" height="11">
+<rect x="5.5" y="7.5" width="13" height="9.14282" fill="#C4C4C4" stroke="#5A6D7B"/>
 </mask>
 <g mask="url(#mask0)">
-<path d="M15.661 22.2404L24.2285 27.5447L33.661 22.2856" stroke="#5A6D7B" stroke-width="1.7"/>
+<path d="M3 7.95471L11.5675 13.2591L21 8" stroke="#5A6D7B" stroke-width="1.7"/>
 </g>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="48" height="48" fill="white" transform="translate(0.661011 0.5)"/>
-</clipPath>
-</defs>
 </svg>
