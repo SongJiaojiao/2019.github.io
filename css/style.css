@@ -304,8 +304,11 @@ nav.stroke ul li a:hover:after {
     background-image: url('../img/homepage/cocktail.png')
 }
 .banner-credit{
-    background-image: url('../img/homepage/credit.png');
+    background-image: url('../img/homepage/credit-min.png');
    
+}
+.banner-BID{
+    background-image: url('../img/homepage/BID.png')
 }
 .banner-google{
     background-image: url('../img/homepage/google.png')
