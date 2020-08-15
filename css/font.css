@@ -13,6 +13,12 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'font-name';
+    src:url('font/FuturaHeavyfont.ttf') format('truetype');
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'font-regular';
     src: url('font/Cera-Regular.ttf')format('truetype');
@@ -265,12 +271,16 @@ p{
 
 }
 
-
+.name{
+    font-size: 48px;
+    color: #333;
+    font-family: "font-name" !important;
+}
 
 .fa{
     color:black;
     font-size:20px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     margin-right:20px;
     transition: all 0.2s;

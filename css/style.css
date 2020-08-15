@@ -131,8 +131,8 @@ nav.stroke ul li a:hover:after {
 
 
 .tagline{
-    height:40vh;
-    margin-left: 11%;
+    height:10vh;
+    margin-left: 10%;
     margin-right: 10%;
 }
 
@@ -546,7 +546,7 @@ img{
     }
 
     .tagline{
-        height: 300px;
+        height: 100px;
     }
     .bio {
         margin-top: 60px;
@@ -566,7 +566,7 @@ img{
         padding: 10%;
     }
     .tagline{
-        height: 200px;
+        height: 100px;
     }
     .card-title{
         display: none;
