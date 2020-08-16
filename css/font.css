@@ -233,10 +233,11 @@ p{
 
 
 .link{
-    
+    font-family: 'font-regular';
     font-weight: 800;
     color:#432EEE;
 }
+
 .link:hover{
     color:#432EEE;
     text-decoration: none;
