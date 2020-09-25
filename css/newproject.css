@@ -471,7 +471,7 @@ padding-right:15%;}
 
 
 
-}
+
 
 @media only screen and (min-width: 992px) {
   #overlay {
@@ -503,6 +503,12 @@ padding-right:15%;}
 
 /*-TABLETS-*/
 @media only screen and (max-width: 768px) {
+    .paragraph{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 5%;   
+    }
+
     .hidecontent{
         display: none;
     
@@ -523,6 +529,11 @@ padding-right:15%;}
 
 /*-PHONE-*/
 @media only screen and (max-width: 576px) {
+    .paragraph{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 5%;   
+    }
 
 }
 
