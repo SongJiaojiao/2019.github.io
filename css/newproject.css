@@ -296,6 +296,10 @@ nav.stroke ul li a:hover:after {
     padding-right: 25%;
  
 }
+
+.artifact-inparagraph{
+    margin-top: 30px;
+}
 .artifact-medium{
     text-align: center;
     padding-left:15%;

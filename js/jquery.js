@@ -93,7 +93,7 @@ $(document).ready(function(){
     
 });
 
-//check passcode
+
 function checkPasscode(userinput,pagelink){
     if (userinput == "1625"){
         $('.modal').modal('hide');
@@ -119,3 +119,13 @@ function checkSize(){
     }
     
 }
+
+
+$(document).bind("contextmenu",function(e) {
+    e.preventDefault();
+   });
+   $(document).keydown(function(e){
+       if(e.which === 123){
+          return false;
+       }
+   });
