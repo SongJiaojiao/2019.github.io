@@ -97,7 +97,7 @@ $(document).ready(function(){
 function checkPasscode(userinput,pagelink){
     if (userinput == "1625"){
         $('.modal').modal('hide');
-        window.open('../page/credit.html');
+        window.open('../page/1625.html');
            
         }
     else {
@@ -121,9 +121,9 @@ function checkSize(){
 }
 
 
-// $(document).bind("contextmenu",function(e) {
-//     e.preventDefault();
-//    });
+$(document).bind("contextmenu",function(e) {
+    e.preventDefault();
+   });
    $(document).keydown(function(e){
        if(e.which === 123){
           return false;
