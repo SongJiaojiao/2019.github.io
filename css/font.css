@@ -115,13 +115,19 @@ h3{
 
 /**Description Title**/
 h4{
-    font-family: "font-regular" !important;
+    font-family: "font-medium" !important;
     font-size:14px;
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 5px;
+    color:#333;
 }
-
+.body-small{
+    font-family: "font-regular" !important;
+    font-size: 14px;
+    line-height: 1.5;
+    color:#333;
+}
 
 .caption{
     font-family: "font-medium" !important;
@@ -171,11 +177,12 @@ p{
     line-height: 1.9;
     letter-spacing: 0.4px;
     color: #555555;
+    font-weight: 600;
     
 }
 
 .guide{
-    font-family: "font-bold" !important;
+    font-family: "font-medium" !important;
     font-size:15px;
     line-height: 1.8;
     letter-spacing: 2px;
@@ -236,6 +243,7 @@ p{
     font-family: 'font-regular';
     font-weight: 800;
     color:#432EEE;
+    
 }
 
 .link:hover{
