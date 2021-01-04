@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: 'font-regular';
-    src: url('font/Cera-Regular.ttf')format('truetype');
+    src: url('font/AvenirNext-Regular.ttf')format('truetype');
 
     font-style: normal;
 }
@@ -97,7 +97,7 @@ h2{
     font-size:26px;
     line-height: 1.6 ;
     letter-spacing: 1px ;
-    color: #333333;
+    color: #444;
     margin-bottom: 25px;
 }
 
@@ -108,7 +108,7 @@ h3{
     font-size:20px;
     line-height: 1.5 ;
     letter-spacing: 1px ;
-    color: #333333;
+    color: #444;
     margin-top: 25px;
     margin-bottom: 15px
 }
@@ -120,22 +120,23 @@ h4{
     line-height: 1.5;
     letter-spacing: 1px;
     margin-bottom: 5px;
-    color:#333;
+    color:#444;
 }
 .body-small{
     font-family: "font-regular" !important;
     font-size: 14px;
     line-height: 1.5;
-    color:#333;
+    color:#444;
 }
 
 .caption{
-    font-family: "font-medium" !important;
+    font-family: "font-regular" !important;
     font-size:15px;
     color: #999999;
     letter-spacing: 1px;
     text-align: center;
     padding-top: 3%;
+    font-weight: 600;
     
 }
 
@@ -282,7 +283,7 @@ p{
 
 .name{
     font-size: 42px;
-    color: #333;
+    color: #444444;
     font-family: "font-name" !important;
 }
 

@@ -125,7 +125,7 @@ button:focus {
 /*dark button hover*/
 .btn-outline-dark{
     overflow: hidden;
-    border-color: #333333;   
+    border-color: #444;   
 }
 
 .btn-outline-dark::after{
@@ -173,9 +173,20 @@ nav.stroke ul li a:hover:after {
   transition: all 0.2s;
 }
 
+.pillar{
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left:12px;
+   padding:8px;
+   border-radius: 4px;
 
+}
 
-
+.vertical-align-left{
+    margin-top: auto;
+    margin-bottom: auto; 
+    text-align: left;
+}
 .line{
     opacity:0;
     left:0;
@@ -189,12 +200,25 @@ nav.stroke ul li a:hover:after {
     
 }
 
+.screen{
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #444;
+    border-width: 1px;
+}
 
 .add-next{
     opacity:0;
 }
 
+.infotoggle{
+    color:#444;
 
+}
+.infotoggle:hover{
+    color:#4C66FC;
+    cursor: pointer; 
+}
 
 .social-icon{
     text-align: center;
@@ -313,9 +337,12 @@ nav.stroke ul li a:hover:after {
     padding-right: 0;
     padding-top: 3%;
     padding-bottom: 3%;
+    width: 100%;
   
     
 }
+
+
 
 .artifact{
     background-color: #f7f7f7;
@@ -362,7 +389,21 @@ nav.stroke ul li a:hover:after {
     box-shadow: 0px 0px 42px -4px rgba(0, 0, 0, .12);
 }
 
+.lined-rec{
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #444;
+  
 
+}
+
+.flex-gap > div{
+    margin: 8px;
+}
 
 .quote{
     padding: 20px;
@@ -381,9 +422,7 @@ nav.stroke ul li a:hover:after {
     padding: 15px;
 }
 
-.pillar{
-    padding: 45px 30px 0px 0px;
-}
+
 
 .clip-img{
     width:94%;
@@ -477,8 +516,13 @@ padding-right:15%;}
 
 
 
-
+/*-XLarge Screen-*/
 @media only screen and (min-width: 992px) {
+    .strip{
+        padding-left: 5%;
+        padding-right: 5%;
+        }
+
   #overlay {
     display:none;
     background-color:white;
@@ -486,14 +530,15 @@ padding-right:15%;}
  
 }
 
-
+/*-Large Screen-*/
 @media only screen and (max-width: 992px) {
-.strip{
-        padding-left: 5%;
-        padding-right: 5%;
-        }
+    .paragraph{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+        margin-bottom: 5%;   
+    }
 
-    
+
 .navbar{
     padding:20px 60px 20px 40px;   
 }
