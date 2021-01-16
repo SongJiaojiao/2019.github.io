@@ -119,7 +119,7 @@ function checkPasscode(userinput,crtproject){
              window.open('../page/credit.html')
         }
         if (crtproject=='borrowersummary'){
-            window.open('../page/borrowersummary.html')
+            window.open('../page/BorrowerSummary.html')
 
         }
        
