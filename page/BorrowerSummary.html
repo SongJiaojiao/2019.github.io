@@ -65,7 +65,7 @@
         </div>
 
         <!-------------- NAV -------------->
-        <div class="fullscreen-img splash credit">
+        <div class="fullscreen-img splash borrowersummary">
             <div class="navbar" style="padding:20px 50px;">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/favicon-white.png" width="30" height="30" alt="">
@@ -390,10 +390,12 @@
             </p>
         </div>
 
-        <div class = "paragraph">
-            <h2>Review Technical Requirements</h2>
+        <!--
+<div class = "paragraph">
+<h2>Review Technical Requirements</h2>
 
-        </div>
+</div>
+-->
         <div class = "strip-simple">
             <div class = "paragraph">
                 <img class = "artifact-inparagraph" src="/img/BorrowerSummary/Sketch.png"/>
@@ -404,10 +406,10 @@
         <div class = "strip-simple">
             <div class = "paragraph">
                 <h2>Review prefilled information in application V.S. upfront </h2>
-                <p>The project is to populate loan application with existing data sources: It's important to notify users of what data has been prefilled. One of the biggest challenges was how I can present the prefilled information.
+                <p>We are prefilling the borrower's loan application with existing data sources: It's important to notify users of what data has been prefilled. One of the biggest challenges was how I can present the prefilled information.
                 </p>
                 <h3>Design 1: A summary page in the loan application</h3>
-                <img class = "artifact-inparagraph" src='/img/BorrowerSummary/alt1-big.png' />
+                <img style="margin-bottom: 32px"class = "artifact-inparagraph" src='/img/BorrowerSummary/alt1-big.png' />
                 <h3>Design 2: A separate page before landing on the loan application</h3>
                 <img class = "artifact-inparagraph" src='/img/BorrowerSummary/alt2-big.png' />
 
@@ -415,7 +417,7 @@
             </div>
             <div class = "paragraph">
                 <p>
-                    At this ppint, I did have a preference or assumption that, the second one should be a easier process for them, because it is easier for them to see everything within one page without digging into individual sections.
+                    At this point, I did have a preference or assumption that, the second one should be a easier process for them, because it is easier for them to see everything within one page without digging into individual sections.
 
                 </p>
             </div>
@@ -427,16 +429,15 @@
         <div class = "strip-simple">
             <div class = "paragraph">
                 <h2>Reframe the problem</h2>
-                <p>The user feedback we received went in a different way then what I expected:<br><br>
-
-                    1. Users view the summary page as a checklist of how close they are to completion and what remains  <br>2. A separate step/page to review only the pre-filled data is repetitive<br> 3.
-                    Users would like to review all the information before submission or at the end of each section</p>
+                <p>To validate the design assumptions, I tested the design with 8 users who have recently purchased a home.</p><br>
+                <p>A common theme from the user testings was: Users are not too concerned with whether the information is correct or not, since they know it comes from verified data sources. Their mindset is to complete the loan application as quickly as possible.This calls for a big design shift from reviewing prefilled information, to help them better track the loan progress.<br><br>
+                Other major feedback also include: Users view the summary page as a checklist of how close they are to completion and what remains, and they would like to review all the information before submission or at the end of each section</p> 
+             
 
             </div>
-            <div class = "paragraph-simple">
+            <div class = "paragraph">
+
                 
-                <p>A common theme from the user testings was: Users are not too concerned with whether the information is correct or not, since they know it comes from verified data sources. Their mindset is to complete the loan application as quickly as possible. <br> This calls for a big design shift from Reviewing prefilled information to help them better track the loan progress.
-                </p>
                 <div id = "bs-cross" >
                     <h2 style="text-decoration: line-through;text-decoration-color:#DD4545">"Is the prefilled information correct?"</h2>
                     <img style = "width:20px;margin-bottom: 20px" src = "/img/BorrowerSummary/Arrow.png">
@@ -445,48 +446,39 @@
 
             </div>
         </div>
+
 
 
 
         <div class = "strip-simple">
-            <div class = "paragraph-simple">
-                <h2>Reframe the problem</h2>
-                <p>A common theme from the user testings was: Users are not too concerned with whether the information is correct or not, since they know it comes from verified data sources. Their mindset is to complete the loan application as quickly as possible. <br> This calls for a big design shift from Reviewing prefilled information to help them better track the loan progress.
-                </p>
-                <div id = "bs-cross" >
-                    <h2 style="text-decoration: line-through;text-decoration-color:#DD4545">"Is the prefilled information correct?"</h2>
-                    <img style = "width:20px;margin-bottom: 20px" src = "/img/BorrowerSummary/Arrow.png">
-                    <h2 >"What do I still need to fill out?"</h2>
-                </div>
+            <div class = "paragraph">
+                <h2>Design Iterations</h2>
+              
+                <h3>Progress Indicators</h3>
+                <p>The new design incorporated theree progress indicators that help users quickly understand what has been completed and what remains </p>
+
+
+                <img style ="margin-bottom:48px" class = "screen artifact-inparagraph" src = "/img/BorrowerSummary/iteration1.png">
+
+
+                <h3>Secondary Sections</h3>
+                <p>The new section better breaks down the information and provides expectatons of what needs to be filled out.  </p>
+                <img style = "width:80%;margin-top: 24px;margin-bottom:48px" src="/img/BorrowerSummary/secondary.png">
+                <h3>One page review</h3>
+                <p>Users can have a one page read-only review before they submit the loan application for any last minute changes.</p>
+                <img class = "screen artifact-inparagraph" src="/img/BorrowerSummary/Review.gif">
 
             </div>
-
         </div>
 
 
 
-        <div class = "paragraph">
-            <h2>Design Iterations</h2>
-            <h3>Progress Indicators</h3>
-            <p>The new design incorporated theree progress indicators that help users quickly understand what has been completed and what remains </p>
+        <!--
+<div class = "paragraph">
+<h2>Learnings and Retrospect</h2>
 
-            <img style = "padding-top:24px;padding-bottom: 32px;width:180px" src = "/img/BorrowerSummary/progressindicator.png">
-            <img style ="margin-bottom:48px" class = "screen" src = "/img/BorrowerSummary/iteration1.png">
-
-
-            <h3>Secondary Sections</h3>
-            <p>The new design incorporated theree progress indicators that help users quickly </p>
-            <img style = "width:80%;margin-top: 24px;margin-bottom:48px" src="/img/BorrowerSummary/secondary.png">
-            <h3>One page review</h3>
-            <img class = "screen" src="/img/BorrowerSummary/Review.gif">
-
-        </div>
-
-
-        <div class = "paragraph">
-            <h2>Learnings and Retrospect</h2>
-
-        </div>
+</div>
+-->
 
 
 

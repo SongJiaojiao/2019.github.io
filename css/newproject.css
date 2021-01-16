@@ -92,6 +92,12 @@ body{
 
 }
 
+.borrowersummary{
+    background-image: url('../img/BorrowerSummary/splash.png');
+    background-position: center;
+    background-size:cover;
+    
+}
 /*remove button outline and shadow*/
 button:focus {
     outline: 0px dotted;
@@ -269,10 +275,15 @@ nav.stroke ul li a:hover:after {
 .pj-lmd{
     background-image: url("../img/lmd/banner.jpg")
 }
+
+.pj-borrowersummary{
+    background-image: url("../img/BorrowerSummary/banner.png");
+}
 .storyboards{
     height:300px;
     background-image: url("../img/capstone/storyboard.png")
 }
+
 
 
 .description{
@@ -583,8 +594,8 @@ img{
 /*-TABLETS-*/
 @media only screen and (max-width: 768px) {
     .paragraph{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
         margin-bottom: 5%;   
     }
 

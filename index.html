@@ -134,7 +134,7 @@
                         </div>
                         <div class="modal-body">
                             <p>This project is password protected. <br>Please Enter Passcode</p>
-                            <input type="password" class="input-box" id="project1Passcode">
+                            <input type="password" class="input-box" id="project1Passcode" name = "pjID">
                             <p id="validation">Wrong Passcode</p>
                         </div>
 
@@ -146,10 +146,12 @@
 
                 </div>
             </div>
+
             <div class="col-12" style="padding:5%">
 
-                <div class="col-12 row card-project" style="background-color:#E4EDFF " data-target="#myModal"
+                <div class="col-12 row card-project" style="background-color:#E4EDFF " data-target="#myModal"  data-pjid = "credit"
                     data-toggle="modal">
+                    
                     <div class="col-md-7  col-xs-12 thumbnail">
                         <!--bglayer-->
                         <img src="/img/homepage/credit-min.png" >
@@ -170,21 +172,21 @@
 
                 </div>
 
-                <div class="col-12 row card-project" style="background-color:#E6F4F6 ">
+                <div class="col-12 row card-project" style="background-color:#E6F4F6 " data-target = "#myModal" data-pjID = "borrowersummary" data-toggle="modal">
                     <div class="col-md-7  col-xs-12 thumbnail">
                         <!--bglayer-->
-                        <img src="/img/homepage/BID.png">
+                        <img src="/img/homepage/borrowersummary.png">
                         <!--overlaylayer-->
-                        <div class="thumbnail-img banner-BID"></div>
+                        <div class="thumbnail-img banner-borrowersummary"></div>
                     </div>
 
                     <div class="col-md-5 card-title">
                         <div class="title-content">
                             <h2><i class="fa fa-lock"
                                     style="margin-top: 0; margin-bottom: 0;font-size: 25px;color: #333333;"></i>Borrower
-                                Instant Decision</h2>
-                            <p>Enable borrowers to obtain a Pre-Approval Letter within seconds of requests.</p>
-                            <p class='client-link'>COMING SOON</p>
+                                Summary</h2>
+                            <p>Prefill your loan application with trusted data sources</p>
+                            
                             <div class="client-link" onclick="window.open('https://www.roostify.com/')">@ROOSTIFY </div>
 
                         </div>

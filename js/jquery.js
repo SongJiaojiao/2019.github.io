@@ -40,18 +40,7 @@ $(document).ready(function(){
         });
           });
 
-    $(".checkPasscode").click(function(){
-        var userinput = $("#project1Passcode").val();
-        var pagelink = "../page/index.html";      
-        checkPasscode(userinput,pagelink);
-        
-    });
     
-     $('.modal').on('hidden.bs.modal', function(){
-        $(this).find('#project1Passcode').val('').end();
-        $(this).find("#validation").css("display", "none");
-    });
-
     //ABOUT PAGE--------------------------------
     //image hover effect
 
@@ -76,7 +65,35 @@ $(document).ready(function(){
 
     //ABOUT PAGE END--------------------------------
 
+    //Modal
 
+    var crtproject = ''
+    
+    $('#myModal').on('show.bs.modal', function(e) {
+        var pjID = $(e.relatedTarget).data('pjid');
+        crtproject = pjID
+       
+
+    }); 
+
+    $(".checkPasscode").click(function(){
+        var userinput = $("#project1Passcode").val(); 
+        checkPasscode(userinput,crtproject);
+
+        
+    });
+
+
+
+    
+    
+     $('.modal').on('hidden.bs.modal', function(){
+        $(this).find('#project1Passcode').val('').end();
+        $(this).find("#validation").css("display", "none");
+    });
+    
+    
+ 
     //btn-scroll
     $(".scroll-btn").click(function(){
         $('html, body').animate({
@@ -94,16 +111,26 @@ $(document).ready(function(){
 });
 
 
-function checkPasscode(userinput,pagelink){
-    if (userinput == "1625"){
+
+function checkPasscode(userinput,crtproject){
+    if (userinput=="1625"){
         $('.modal').modal('hide');
-        window.open('../page/1625.html');
-           
+        if (crtproject=='credit'){
+             window.open('../page/credit.html')
         }
+        if (crtproject=='borrowersummary'){
+            window.open('../page/borrowersummary.html')
+
+        }
+       
+    }
+
     else {
         $("#validation").css("display", "block");        
         } 
 }
+
+
 
 
 //move overlay

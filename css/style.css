@@ -322,7 +322,9 @@ nav.stroke ul li a:hover:after {
 .banner-capstone{
     background-image: url('../img/homepage/capstone.gif')
 }
-
+.banner-borrowersummary{
+    background-image: url('../img/homepage/borrowersummary.png');
+}
 .banner-lmd{
     background-image: url('../img/homepage/lmd.png')
 }
