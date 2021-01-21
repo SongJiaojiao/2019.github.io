@@ -162,7 +162,14 @@ h4{
     color:white;
 }
 .black{
-    color: black !important;
+    color:#333 !important;
+}
+
+.gray{
+    color:rgb(212, 212, 212);
+}
+.green{
+    color:#5D9D3C;
 }
 
 p-description{
@@ -281,10 +288,17 @@ p{
 
 }
 
-.name{
+.display1{
     font-size: 42px;
     color: #444444;
     font-family: "font-name" !important;
+}
+
+.display2{
+    font-size: 40px;
+    /* color: #444444; */
+    font-family: "font-medium" !important;
+
 }
 
 .fa{
@@ -327,15 +341,9 @@ p{
         font-size: 18px;
         margin-bottom: 20px;
     }
-    .nameline{
-    margin-top:40px !important;
-    }
-   
-    .sloganline {
-    margin-top:25px !important;
-    font-size: 18px;
+  
 
-    }
+
     
     h3{
     font-size:16px;
