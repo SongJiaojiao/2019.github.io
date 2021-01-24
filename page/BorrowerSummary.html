@@ -367,7 +367,7 @@
             <p class="guide">Design Walkthrough</p>
             <h2>Here is a Scenario</h2>
             <div class="lined-rec" style="padding:48px;">
-                <div class="row" style="margin-bottom: 48px;">
+                <div class="row" style="margin-bottom: 72px;">
                     <div class="col-4 vertical-align-left">
                         <img style="width: 140px;" src="/img/BorrowerSummary/DigitalLender.png">
                     </div>
@@ -378,9 +378,9 @@
                     </div>
                 </div>
 
-                <div class="row ">
+                <div class="row " >
                     <div class="col-4 vertical-align-left">
-                        <img style="width: 130px;" src="/img/BorrowerSummary/Neha.png">
+                        <img style="width: 130px;" src="/img/BorrowerSummary/Neha2.png">
                     </div>
                     <div class="col-8 vertical-align-left">
                         <p>
@@ -495,16 +495,16 @@
 
     <div class="strip">
         <div class="paragraph">
-            <h2>The focus on Reviewing Prefilled Information </h2>
-            <p>One of the goals was to present the prefilled information at the first place so users can validate the data accuracy. I assumed that transparency should be at the core of the design: when prefill happens, sometimes from external data sources, users would want to confirm whether the information prefilled is correct or not. My assumption, as well as stakeholders' feedback around compliance , was pushing the design into a certain direction:
+            <h2>Focusing on Reviewing Prefilled Information </h2>
+            <p>One of the goals was to present the prefilled information at the first place so users can validate the data accuracy. I assumed that the transparency should be at the core of the design: when prefill happens, users would want to confirm whether the information prefilled is correct or not. My assumption, as well as stakeholders' feedback around compliance , was pushing the design into a certain direction that we should escalate the prefilled informatiom.
             </p>
-            <h3>Design 1: Review in-App</h3>
-            <p>A "turbotax-ish" summary page that lives within the application. User can review the prefilled information in its own section card. The "Go to section" CTA will take them to the individual sections where they fill out and edit information.  </p>
+            <h3 style="margin-top:56px">Design 1: Review in-App</h3>
+            <p>The first design was a turbotax-ish summary page that lives within the application. User can review the prefilled information in its own section card. The "Go to section" CTA will take them to the individual sections where they fill out and edit information.  </p>
         </div>
-        <img style="padding:0 5% 0 5%;margin-bottom:32px" class="artifact-fullscreen" src='/img/BorrowerSummary/alt1-big.png' />
+        <img style="padding:0 5% 0 5%;margin-bottom:56px" class="artifact-fullscreen" src='/img/BorrowerSummary/alt1-big.png' />
         <div class="paragraph">
             <h3>Design 2: Review pre-App</h3>
-            <p>Before the user starts filling out the loan application, the user will see a separate page with all prefilled information that allows review or editing at a time.</p>
+            <p>Another option was: before the user starts filling out the loan application, the user will see a separate page with all prefilled information that allows review or editing at a time.</p>
         </div>
         <img style="padding:0 5% 0 5%;margin-bottom:100px" class="artifact-fullscreen" src='/img/BorrowerSummary/alt2-big.png' />
 
@@ -514,7 +514,7 @@
     <div class="strip-simple">
         <div class="paragraph">
             <h2>Reframe the Problem</h2>
-            <p>I did task based testings with 8 users who have recently purchased a home. While I was expectating a preference over one way or another, the feedback I received did go further than what I expected.</p><br>
+            <p>I tested the designs with 8 users who have recently purchased a home. While I was expectating a preference over one way or another, the feedback I received did go into a different direction.</p><br>
             <p>A common theme from the user testings was: Users are not too concerned with whether the information is
                 correct or not, since they know it comes from verified data sources. Their mindset was to complete the application as quickly as possible. They would like to know what has been completed, and what still remains. This calls for a big design shift from reviewing prefilled
                 information, to helping them better track the loan progress.<br><br>
@@ -543,28 +543,40 @@
 
     <div class="strip-simple">
         <div class="paragraph">
-            <h2>Design Iterations</h2>
-
-            <h3>Progress Indicators</h3>
-            <p>The new design incorporated theree progress indicators that help users quickly understand what has been
-                completed and what remains </p>
-
-
-            <img style="margin-bottom:48px" class="screen artifact-inparagraph"
-                src="/img/BorrowerSummary/iteration1.png">
-
-
-            <h3>Secondary Sections</h3>
-            <p>The new section better breaks down the information and provides expectatons of what needs to be filled
-                out. </p>
-            <img style="width:80%;margin-top: 24px;margin-bottom:48px" src="/img/BorrowerSummary/secondary.png">
-            <h3>One page review</h3>
-            <p>Users can have a one page read-only review before they submit the loan application for any last minute
-                changes.</p>
-            <img class="screen artifact-inparagraph" src="/img/BorrowerSummary/Review.gif">
+            <h2>Better understand the loan progress</h2>
+            <p>With the new design goal of better understanding the loan progress, the new design challenge is how to communicate the applicaiton status. The nature of our loan applications brings out these key considerations:</p><br>
+            <p>1. Not all fields are required to submit, but we would like to collect as much information as possible to generate high quality applications.</p><br>
+            <p>2. As users fill out the questions, more questions will be progressively revealed for further details.</p><br>
+            <p>Central to these charateristics, were these key design ideas: </p><br>
+            <p>1.The progress should be able to dynamically change along with the user input. </p><br>
+            <p>2.A balance between accuracy and obfuscation of the progress as users should feel encouraged but not pressed to complete the application.</p>
+        </div>
+        <img class="artifact-medium" src="/img/BorrowerSummary/progressindicators.png">
+        <p class = "caption">Design Iteration on Progress Indicators</p>
+        <div class = "paragraph">
+            <p>With the new design goal of better understanding the loan progress, the new design challenge is how to communicate the applicaiton status. The nature of our loan applications brings out these key considerations:</p><br>
+            <p>1. Not all fields are required to submit, but we would like to collect as much information as possible to generate high quality applications.</p><br>
+            <p>2. As users fill out the questions, more questions will be progressively revealed for further details.</p><br>
+            <p>Central to these charateristics, were these key design ideas: </p><br>
+            <p>1.The progress should be able to dynamically change along with the user input. </p><br>
 
         </div>
     </div>
+
+    <!-- <div class="strip-simple">
+        <div class="paragraph">
+            
+            <p>With the new design goal of better understanding the loan progress, the new design challenge is how to communicate the applicaiton status. The nature of our loan applications brings out these key considerations:</p><br>
+            <p>1. Not all fields are required to submit, but we would like to collect as much information as possible to generate high quality applications.</p><br>
+            <p>2. As users fill out the questions, more questions will be progressively revealed for further details.</p><br>
+            <p>Central to these charateristics, were these key design ideas: </p><br>
+            <p>1.The progress should be able to dynamically change along with the user input. </p><br>
+            <p>2.A balance between accuracy and obfuscation of the progress as users should feel encouraged but not pressed to complete the application.</p>
+        </div>
+        <img class="artifact-medium" src="/img/BorrowerSummary/progressindicators.png">
+        <p class = "caption">Design Iteration on Progress Indicators</p>
+    </div> -->
+
 
 
 
