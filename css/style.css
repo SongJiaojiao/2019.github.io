@@ -353,7 +353,7 @@ nav.stroke ul li a:hover:after {
 
 
 .color-about{
-    margin-left: 0px;
+
     background-color: black;
 }
 
@@ -458,10 +458,11 @@ nav.stroke ul li a:hover:after {
 }
 
 
+
 .about{
     margin-top: 8%;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
@@ -502,7 +503,7 @@ img{
 .fun-fact{
     padding-left:0;
     padding-right:0;
-    
+
     overflow: hidden; 
     cursor: pointer;
 }
@@ -558,6 +559,9 @@ img{
     .card-title{
         display: none;
     }
+    .aboutme-topic{
+        margin-bottom: 48px;
+    }
     
 }
 
@@ -573,6 +577,16 @@ img{
     }
     .card-title{
         display: none;
+    }
+    .aboutme-topic{
+        margin-bottom: 48px;
+    }
+    .fun-fact{
+        padding-left:0;
+        padding-right:0;
+        margin: 16px 0px 16px 0px;
+        overflow: hidden; 
+        cursor: pointer;
     }
 
 }

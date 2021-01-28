@@ -168,6 +168,9 @@ h4{
 .gray{
     color:rgb(212, 212, 212);
 }
+.darkgray{
+    color:#999;
+}
 .green{
     color:#5D9D3C;
 }
@@ -192,6 +195,19 @@ p{
     font-weight: 600;
     
 }
+
+
+.bold{
+    font-family: "font-medium" !important;
+}
+
+.small{
+    
+    font-size:14px !important;
+
+}
+
+
 
 .guide{
     font-family: "font-medium" !important;
@@ -350,7 +366,6 @@ p{
 
     
     h3{
-    font-size:16px;
     line-height: 1.5;
 }
     .white_des{
