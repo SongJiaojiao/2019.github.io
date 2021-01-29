@@ -34,6 +34,11 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: "mermaid1001";
+    src:url('font/Mermaid1001.ttf')format('truetype')
+}
+
 
 
 
@@ -86,8 +91,9 @@
 /**Page Title**/
 h1{
     font-family: "font-medium" !important;
-    font-size:30px;
+    font-size:32px;
     line-height: 1.5; 
+    color:#444;
    
 }
 
@@ -319,6 +325,10 @@ p{
     /* color: #444444; */
     font-family: "font-medium" !important;
 
+}
+
+.display3{
+    font-size:
 }
 
 .fa{
