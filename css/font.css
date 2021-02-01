@@ -90,17 +90,18 @@
 
 /**Page Title**/
 h1{
-    font-family: "font-medium" !important;
-    font-size:32px;
+    font-family: "mermaid1001" !important;
+    font-size:34px;
     line-height: 1.5; 
     color:#444;
+    letter-spacing: 1px;
    
 }
 
 /**Section Title**/
 h2{
-    font-family: "font-medium";
-    font-size:26px;
+    font-family: "mermaid1001";
+    font-size:28px;
     line-height: 1.6 ;
     letter-spacing: 1px ;
     color: #444;
@@ -128,6 +129,36 @@ h4{
     margin-bottom: 5px;
     color:#444;
 }
+
+
+.display1{
+    font-size: 56px;
+    color: #444444;
+    font-family: "mermaid1001" !important;
+}
+
+.display2{
+    font-size: 40px;
+    /* color: #444444; */
+    font-family: "mermaid1001" !important;
+    letter-spacing: 1px;
+
+}
+
+.display3{
+    font-size: 32px;
+    /* color: #444444; */
+    font-family: "mermaid1001" !important;
+    letter-spacing: 1px;
+}
+
+.display4{
+    font-size: 28px;
+    font-family: "mermaid1001"!important;
+    letter-spacing: 2px;
+}
+
+
 .body-small{
     font-family: "font-regular" !important;
     font-size: 14px;
@@ -312,32 +343,6 @@ p{
     position: relative;
     height:40px;
 
-}
-
-.display1{
-    font-size: 56px;
-    color: #444444;
-    font-family: "mermaid1001" !important;
-}
-
-.display2{
-    font-size: 40px;
-    /* color: #444444; */
-    font-family: "mermaid1001" !important;
-
-}
-
-.display3{
-    font-size: 32px;
-    /* color: #444444; */
-    font-family: "mermaid1001" !important;
-}
-
-.display4{
-    font-size: 28px;
-    /* color: #444444; */
-    font-family: "mermaid1001" !important;
-    letter-spacing: 5%;
 }
 
 
