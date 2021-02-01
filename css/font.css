@@ -315,21 +315,32 @@ p{
 }
 
 .display1{
-    font-size: 42px;
+    font-size: 56px;
     color: #444444;
-    font-family: "font-name" !important;
+    font-family: "mermaid1001" !important;
 }
 
 .display2{
     font-size: 40px;
     /* color: #444444; */
-    font-family: "font-medium" !important;
+    font-family: "mermaid1001" !important;
 
 }
 
 .display3{
-    font-size:
+    font-size: 32px;
+    /* color: #444444; */
+    font-family: "mermaid1001" !important;
 }
+
+.display4{
+    font-size: 28px;
+    /* color: #444444; */
+    font-family: "mermaid1001" !important;
+    letter-spacing: 5%;
+}
+
+
 
 .fa{
     color:black;

@@ -39,7 +39,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #F8F4F0;">
     <div id="overlay">
         <nav>
             <ul class="navbar-vertical">
@@ -69,8 +69,8 @@
 
 
 
-        <p class ="display1">Jiaojiao Song</p>
-       
+        <p class="display1">Jiaojiao Song</p>
+
 
         <button class="hamburger hamburger--spring navbar-toggler menu-button" type="button">
             <span class="hamburger-box">
@@ -100,7 +100,7 @@
         </div>
     </nav>
 
-       
+
 
     <div class="tagline">
 
@@ -134,7 +134,7 @@
                         </div>
                         <div class="modal-body">
                             <p>This project is password protected. <br>Please Enter Passcode</p>
-                            <input type="password" class="input-box" id="project1Passcode" name = "pjID">
+                            <input type="password" class="input-box" id="project1Passcode" name="pjID">
                             <p id="validation">Wrong Passcode</p>
                         </div>
 
@@ -149,17 +149,17 @@
 
             <div class="col-12" style="padding:5%">
 
-                <div class="col-12 row card-project" style="background-color:#E4EDFF " data-target="#myModal"  data-pjid = "credit"
+                <!-- <div class="col-12 row card-project" style="background-color:#D7D1C6 " data-target="#myModal"  data-pjid = "credit"
                     data-toggle="modal">
                     
                     <div class="col-md-7  col-xs-12 thumbnail">
-                        <!--bglayer-->
+                        bglayer
                         <img src="/img/homepage/credit-min.png" >
                         <!--overlaylayer-->
-                        <div class="thumbnail-img banner-credit"></div>
-                    </div>
+                <!-- <div class="thumbnail-img banner-credit"></div>
+                    </div> -->
 
-                    <div class="col-md-5 card-title">
+                <!-- <div class="col-md-5 card-title">
                         <div class="title-content">
                             <h1><i class="fa fa-lock"
                                     style="margin-top: 0; margin-bottom: 0;font-size: 25px;color: #333333;"></i>Credit
@@ -170,140 +170,172 @@
                         </div>
                     </div>
 
+                </div> -->
+                <div class="project-section">
+                    <div class="row col-12 card-parent" style="background-color: #f0eae5;" data-target="#myModal"
+                        data-pjid="credit" data-toggle="modal">
+                        <div class="card-child" style="background-image: url('/img/homepage/credit2.png');">
+                        </div>
+                       
+                    </div>
+                    <p class="display2">Credit Service</p>
+                    <P>Deliver a Better Credit Experience to Ease Lender Stress</P>
                 </div>
 
-                <div class="col-12 row card-project" style="background-color:#E6F4F6 " data-target = "#myModal" data-pjID = "borrowersummary" data-toggle="modal">
-                    <div class="col-md-7  col-xs-12 thumbnail">
-                        <!--bglayer-->
-                        <img src="/img/homepage/borrowersummary.png">
-                        <!--overlaylayer-->
-                        <div class="thumbnail-img banner-borrowersummary"></div>
+                <div class="project-section">
+                    <div class="row col-12 card-parent" style="background-color: #f0eae5;" data-target="#myModal"
+                        data-pjid="borrowersummary" data-toggle="modal">
+                        <div class="card-child" style="background-image: url('/img/homepage/borrowersummary.png');">
+                        </div>
+                       
                     </div>
+                    <p class="display2">Borrower Summary</p>
+                    <P>Prefill your Loan Application with Trusted Data Sources</P>
+                </div>
 
-                    <div class="col-md-5 card-title">
-                        <div class="title-content">
-                            <h2><i class="fa fa-lock"
-                                    style="margin-top: 0; margin-bottom: 0;font-size: 25px;color: #333333;"></i>Borrower
-                                Summary</h2>
-                            <p>Prefill your loan application with trusted data sources</p>
+                <div class="project-section">
+                    <div class="row col-12 card-parent" style="background-color: #f0eae5;"
+                        onclick="window.open('../page/capstone.html','_blank')">
+                        <div class="card-child row">
+                                <div class="col-2 col-xs-0"></div>
+                                <img class="col-md-8 col-xs-12"  style="object-fit: cover;"src='/img/homepage/capstone.gif'>
                             
-                            <div class="client-link" onclick="window.open('https://www.roostify.com/')">@ROOSTIFY </div>
 
                         </div>
-                    </div>
 
+                    </div>
+                    <p class="display2">Lighthouse</p>
+                    <P>An Interactive Data Dashboard for K12 Teachers</P>
                 </div>
 
 
-
-                <div class="col-12 row card-project" style="background-color:#E9F4FE "
-                    onclick="window.open('../page/capstone.html','_blank')">
-                    <div class="col-md-7  col-xs-12 thumbnail">
-                        <!--bglayer-->
-                        <img class="dropshadow" src="/img/homepage/capstone.gif">
-                        <!--overlaylayer-->
-                        <div class="thumbnail-img banner-capstone"></div>
-                    </div>
-
-                    <div class="col-md-5 card-title">
-                        <div class="title-content">
-                            <h1>Lighthouse</h1>
-                            <p>An Interactive Data Dashboard for K12 Teachers</p>
-                            <div class="client-link" onclick="window.open('https://www.edmentum.com/')">@EDMENTUM </div>
-                        </div>
-                    </div>
-
-                </div>
-
-     
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 card-project-left">
-                        <div class="col-12 row card-project" style="background-color:#f1f1f1;"
+                    <div class="col-md-6 col-xs-12 project-section" 
+                        onclick="window.open('../page/msra.html','_blank')">
+                        <div class="card-parent-short " style="background-color:rgba(0,0,0,0.05);">
+                            <div class="card-child" style="background-image: url('/img/homepage/MS.png');">
+                            </div>
+                        </div>
+                        <p class="display3">Powerstory</p>
+                        <P>A Data Visualization Authoring Tool in PowerBI</P>
+
+                    </div>
+                    <div class="col-md-6 col-xs-12 project-section" 
+                        onclick="window.open('../page/homerepair.html','_blank')">
+                        <div class = "card-parent-short" style="background-color:rgba(0,0,0,0.05);">
+                            <div class="card-child" style="background-image: url('/img/homepage/google.png');">
+                        </div>
+                        </div>
+
+                        <p class="display3">Community Issue Reporting</p>
+                        <P>An Issue Reporting System for a Residential Community</P>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 project-section" 
+                        onclick="window.open('../page/lmd.html','_blank')">
+                        <div class="card-parent-short " style="background-color:rgba(0,0,0,0.05);">
+                            <div class="card-child" style="background-image: url('/img/homepage/lmd.png');">
+                            </div>
+                        </div>
+                        <p class="display3">Lodestar</p>
+                        <P>Portfolio Documentation System for teenagers</P>
+
+                    </div>
+                    <div class="col-md-6 col-xs-12 project-section" 
+                    onclick="window.open('https://songjiaojiao1229.wixsite.com/songjiaojiao/cocktail-party','_blank')">
+                        <div class = "card-parent-short" style="background-color:rgba(0,0,0,0.05);">
+                            <div class="card-child" style="background-image: url('/img/homepage/cocktail.png');">
+                        </div>
+                        </div>
+
+                        <p class="display3">Cocktail party</p>
+                        <P>A Data Visualization for First Time Drinkers in D3.js</P>
+
+                    </div>
+
+
+                </div>
+
+                <!-- <div class="row">
+
+                    <div class="col-md-6 col-sm-12 card-project-left project-section">
+                        <div class="col-12 row card-project" style="background-color:rgba(0,0,0,0.05);"
                             onclick="window.open('../page/lmd.html','_blank')">
                             <div class="col-md-12  col-xs-12 thumbnail">
 
                                 <img src="/img/homepage/MS.png">
-
-                                <div class="thumbnail-img banner-microsoft"></div>
-                                <div class="thumbnail-color color-msra"></div>
-                                <div class="thumbnail-title">
-                                    <h2 class="white">Powerstory</h2>
-                                </div>
-                                <div class="thumbnail-description">
-                                    <p class="white">A Data Visualization Authoring Tool in PowerBI</p>
-                                </div>
-                                <div class="thumbnail-line" style="border-bottom: 1px solid white;"></div>
-                                <!-- <div class="thumbnail-img banner-lmd"></div> -->
                             </div>
 
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 card-project-right">
+                        <p class="display3">Powerstory</p>
+                        <P>A Data Visualization Authoring Tool in PowerBI</P>
 
-                        <div class="col-12 row card-project" style="background-color:#E7E6F7 "
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 card-project-right project-section">
+
+                        <div class="col-12 row card-project" style="background-color:rgba(0,0,0,0.05);"
                             onclick="window.open('https://songjiaojiao1229.wixsite.com/songjiaojiao/cocktail-party','_blank')">
                             <div class="col-md-12  col-xs-12 thumbnail">
 
                                 <img src="/img/homepage/google.png">
 
-                                <div class="thumbnail-img banner-google"></div>
-                                <div class="thumbnail-color color-cocktail"></div>
-                                <div class="thumbnail-title">
-                                    <h2 class="white">Community Issue Reporting</h2>
-                                </div>
-                                <div class="thumbnail-description">
-                                    <p class="white">An Issue Reporting System for a Residential Community</p>
-                                </div>
-                                <div class="thumbnail-line"></div>
                                 <!-- <div class="thumbnail-img banner-cocktail"></div> -->
-                            </div>
+                <!-- </div>
+
                         </div>
+                        <p class="display3">Community Issue Reporting</p>
+                        <P>An Issue Reporting System for a Residential Community</P>
                     </div>
+
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 card-project-left">
-                        <div class="col-12 row card-project" style="background-color:#F5F1EB;"
+                    <div class="col-md-6 col-sm-12 card-project-left project-section">
+                        <div class="col-12 row card-project" style="background-color:rgba(0,0,0,0.05);"
                             onclick="window.open('../page/lmd.html','_blank')">
                             <div class="col-md-12  col-xs-12 thumbnail">
 
                                 <img src="/img/homepage/lmd.png">
 
-                                <div class="thumbnail-img banner-lmd"></div>
-                                <div class="thumbnail-color color-lmd"></div>
-                                <div class="thumbnail-title">
-                                    <h2>Lodestar</h2>
-                                </div>
-                                <div class="thumbnail-description">
-                                    <p>Portfolio Documentation System for teenagers</p>
-                                </div>
-                                <div class="thumbnail-line" style="border-bottom: 1px solid black;"></div>
-                                <div class="thumbnail-img banner-lmd"></div>
+
                             </div>
 
                         </div>
+                        <p class="display3">Lodestar</p>
+                        <P>Portfolio Documentation System for teenagers</P>
                     </div>
-                    <div class="col-md-6 col-sm-12 card-project-right">
+                    <div class="col-md-6 col-sm-12 card-project-right project-section">
 
-                        <div class="col-12 row card-project" style="background-color:#4E3681 "
+                        <div class="col-12 row card-project" style="background-color:rgba(0,0,0,0.05);"
                             onclick="window.open('https://songjiaojiao1229.wixsite.com/songjiaojiao/cocktail-party','_blank')">
                             <div class="col-md-12  col-xs-12 thumbnail">
 
                                 <img src="/img/homepage/cocktail.png">
 
                                 <div class="thumbnail-img banner-cocktail"></div>
-                                <div class="thumbnail-color color-cocktail"></div>
-                                <div class="thumbnail-title">
+                                <!-- <div class="thumbnail-color color-cocktail"></div> -->
+                <!-- <div class="thumbnail-title">
                                     <h2 class="white">Cocktail Party</h2>
                                 </div>
                                 <div class="thumbnail-description">
                                     <p class="white">A Data Visualization for First Time Drinkers in D3.js</p>
-                                </div>
-                                <div class="thumbnail-line"></div>
-                                <div class="thumbnail-img banner-cocktail"></div>
-                            </div>
+                                </div> -->
+                <!-- <div class="thumbnail-line"></div> -->
+                <!-- <div class="thumbnail-img banner-cocktail"></div> -->
+                <!-- </div>
                         </div>
+                        <p class="display3">Cocktail Party</p>
+                        <P>A Data Visualization for First Time Drinkers in D3.js</P>
                     </div>
-                </div>
+                </div> -->
+
 
             </div>
 
