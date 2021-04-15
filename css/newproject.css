@@ -376,11 +376,6 @@ nav.stroke ul li a:hover:after {
 
 
 .highlight{
-    /*     background-color: #EDF1FC;*/
-    /*
-    padding-top:2%;
-    padding-bottom: 2%;
-    */
     height:550px;
     text-align: center;
 
@@ -440,6 +435,10 @@ nav.stroke ul li a:hover:after {
     
 }
 
+.mobileframe img{
+    border-radius: 24px !important;
+    border:6px solid  #444 !important;
+}
 
 
 .flex-gap > div{
